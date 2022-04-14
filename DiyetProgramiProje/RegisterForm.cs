@@ -83,12 +83,6 @@ namespace DiyetProgramiProje
             this.rbFemale.ForeColor = ColorTranslator.FromHtml("#293241");
         }
 
-        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Form frm = Application.OpenForms["Form1"];
-            //frm.Show();
-        }
-
         private void rbUser_CheckedChanged(object sender, EventArgs e)
         {
             panelUser.Visible = true;
@@ -118,7 +112,7 @@ namespace DiyetProgramiProje
                 }
                 else
                 {
-                    MessageBox.Show("Nothing selected");
+                    MessageBox.Show("Hiçbirşey seçilmedi.");
                 }
 
             }
@@ -225,11 +219,11 @@ namespace DiyetProgramiProje
         {
             if (!txtEmail.Text.Contains("@") || !txtEmail.Text.Contains(".com"))
             {
-                MessageBox.Show("Please type a correct email.");
+                MessageBox.Show("Lütfen '@'ve '.com'içeren doğru bir e-mail girin.");
             }
             else if (txtPassword.Text.Length < 6 || txtPassword.Text.Length > 25 || !txtPassword.Text.Any(c => char.IsUpper(c)) || !txtPassword.Text.Any(c => char.IsDigit(c)) || !txtPassword.Text.Any(c => char.IsPunctuation(c)))
             {
-                MessageBox.Show("Password length must be at least 6 and at most 25 digits and must contain at least one number, capital letter and symbol.");
+                MessageBox.Show("Şifre uzunluğu en az 6 en fazla 25 haneli olmalı ve en az bir rakam, büyük harf ve sembol içermelidir.");
             }
             else
             {
@@ -256,7 +250,7 @@ namespace DiyetProgramiProje
                     userRegisterInfo.UserType = MembershipTypeEnum.Client;
                     userService.AddRegister(userRegisterInfo);
 
-                    DialogResult result = MessageBox.Show("Successfully registered");
+                    DialogResult result = MessageBox.Show("Kayıt başarılı.");
                     if (result == DialogResult.OK)
                     {
                         this.Close();
@@ -273,11 +267,11 @@ namespace DiyetProgramiProje
         {
             if (!txtDEmail.Text.Contains("@") || !txtDEmail.Text.Contains(".com"))
             {
-                MessageBox.Show("Please type a correct email.");
+                MessageBox.Show("Lütfen '@'ve '.com'içeren doğru bir e-mail girin.");
             }
             else if (txtDPassword.Text.Length < 6 || txtDPassword.Text.Length > 25 || !txtDPassword.Text.Any(c => char.IsUpper(c)) || !txtDPassword.Text.Any(c => char.IsDigit(c)) || !txtDPassword.Text.Any(c => char.IsPunctuation(c)))
             {
-                MessageBox.Show("Password length must be at least 6 and at most 25 digits and must contain at least one number, capital letter and symbol.");
+                MessageBox.Show("Şifre uzunluğu en az 6 en fazla 25 haneli olmalı ve en az bir rakam, büyük harf ve sembol içermelidir.");
             }
             else
             {
@@ -291,7 +285,7 @@ namespace DiyetProgramiProje
                     Image img = pictureBox1.Image;
                     if (img == null)
                     {
-                        MessageBox.Show("Please add a photo");
+                        MessageBox.Show("Lütfen fotoğraf ekleyin.");
                     }
                     else
                     {
@@ -314,7 +308,7 @@ namespace DiyetProgramiProje
 
                         dieticianService.AddRegister(dieticianRegisterInfo);
 
-                        DialogResult result = MessageBox.Show("Successfully registered");
+                        DialogResult result = MessageBox.Show("Kayıt başarlı.");
                         if (result == DialogResult.OK)
                         {
                             this.Close();

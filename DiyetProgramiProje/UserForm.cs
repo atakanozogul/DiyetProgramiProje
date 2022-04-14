@@ -71,7 +71,6 @@ namespace DiyetProgramiProje
             this.radioButtonOpen.ForeColor = ColorTranslator.FromHtml("#293241");
             this.radioButtonClose.ForeColor = ColorTranslator.FromHtml("#293241");
             this.btnAddMeal2.BackColor = ColorTranslator.FromHtml("#293241");
-            this.btnNewMeal2.BackColor = ColorTranslator.FromHtml("#293241");
             this.labelAddMeal1.BackColor = ColorTranslator.FromHtml("#ee6c4d");
             this.labelAddMeal2.BackColor = ColorTranslator.FromHtml("#ee6c4d");
             this.labelAddMeal3.BackColor = ColorTranslator.FromHtml("#ee6c4d");
@@ -126,12 +125,6 @@ namespace DiyetProgramiProje
             lblTotalCalories.Text = (nudPortion.Value * Convert.ToDecimal(lblCaloriesByPortion.Text)).ToString();
         }
 
-        private void btnNewMeal2_Click(object sender, EventArgs e)
-        {
-            FoodAddForm foodAddForm = new FoodAddForm(userRegisterInfo);
-            this.Hide();
-            foodAddForm.ShowDialog();
-        }
 
         int foodId;
         int mealId;
@@ -145,7 +138,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please select a food before delete");
+                MessageBox.Show("Lütfen silme işleminden önce bir yemek seçin.");
             }
             
         }
@@ -236,7 +229,7 @@ namespace DiyetProgramiProje
 
                     if (nudPortion.Value == 0)
                     {
-                        MessageBox.Show("Please type a portion value");
+                        MessageBox.Show("Lütfen bir porsiyon seçin.");
                     }
                     else
                     {
@@ -250,7 +243,7 @@ namespace DiyetProgramiProje
 
                     if (list.Contains((int)lboxFoods.SelectedValue))
                     {
-                        MessageBox.Show("This food is already exist.");
+                        MessageBox.Show("Bu yemek zaten var.");
                     }
                     else
                     {
@@ -264,7 +257,7 @@ namespace DiyetProgramiProje
 
                         if (nudPortion.Value == 0)
                         {
-                            MessageBox.Show("Please type a portion value");
+                            MessageBox.Show("Lütfen bir porsiyon seçin.");
                         }
                         else
                         {
@@ -331,7 +324,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please select a food before delete");
+                MessageBox.Show("Lüften silme işleminden önce bir yemek seçin.");
             }
         }
 

@@ -87,7 +87,7 @@
             this.grpBoxMeals.Size = new System.Drawing.Size(872, 316);
             this.grpBoxMeals.TabIndex = 15;
             this.grpBoxMeals.TabStop = false;
-            this.grpBoxMeals.Text = "Check Meals";
+            this.grpBoxMeals.Text = "Öğün Kontrolü";
             this.grpBoxMeals.Paint += new System.Windows.Forms.PaintEventHandler(this.grpBoxMeals_Paint);
             // 
             // grpBoxTakenCal
@@ -100,7 +100,7 @@
             this.grpBoxTakenCal.Size = new System.Drawing.Size(165, 113);
             this.grpBoxTakenCal.TabIndex = 21;
             this.grpBoxTakenCal.TabStop = false;
-            this.grpBoxTakenCal.Text = "Daily Calorie Taken";
+            this.grpBoxTakenCal.Text = "Günlük alınan Kalori";
             this.grpBoxTakenCal.Paint += new System.Windows.Forms.PaintEventHandler(this.grpBoxTakenCal_Paint);
             // 
             // lblDailyCalorieTaken
@@ -124,7 +124,7 @@
             this.grpBoxCalRequirement.Size = new System.Drawing.Size(221, 113);
             this.grpBoxCalRequirement.TabIndex = 20;
             this.grpBoxCalRequirement.TabStop = false;
-            this.grpBoxCalRequirement.Text = "Daily Calorie Requirement";
+            this.grpBoxCalRequirement.Text = "Günlük Kalori İhtiyacı";
             this.grpBoxCalRequirement.Paint += new System.Windows.Forms.PaintEventHandler(this.grpBoxCalRequirement_Paint);
             // 
             // lblDailyCalorieRequirement
@@ -152,9 +152,9 @@
             this.labelMealTime.AutoSize = true;
             this.labelMealTime.Location = new System.Drawing.Point(11, 96);
             this.labelMealTime.Name = "labelMealTime";
-            this.labelMealTime.Size = new System.Drawing.Size(99, 23);
+            this.labelMealTime.Size = new System.Drawing.Size(118, 23);
             this.labelMealTime.TabIndex = 17;
-            this.labelMealTime.Text = "Meal Time:";
+            this.labelMealTime.Text = "Öğün Zamanı:";
             // 
             // dtMealDate
             // 
@@ -169,9 +169,9 @@
             this.labelMealDate.AutoSize = true;
             this.labelMealDate.Location = new System.Drawing.Point(11, 45);
             this.labelMealDate.Name = "labelMealDate";
-            this.labelMealDate.Size = new System.Drawing.Size(98, 23);
+            this.labelMealDate.Size = new System.Drawing.Size(105, 23);
             this.labelMealDate.TabIndex = 15;
-            this.labelMealDate.Text = "Meal Date:";
+            this.labelMealDate.Text = "Öğün Tarihi:";
             // 
             // lvMeals
             // 
@@ -191,17 +191,17 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Food";
+            this.columnHeader2.Text = "Yemek";
             this.columnHeader2.Width = 210;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Portion";
+            this.columnHeader3.Text = "Porsiyon";
             this.columnHeader3.Width = 110;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Calorie";
+            this.columnHeader4.Text = "Kalori";
             this.columnHeader4.Width = 112;
             // 
             // grpboxClients
@@ -216,7 +216,7 @@
             this.grpboxClients.Size = new System.Drawing.Size(872, 360);
             this.grpboxClients.TabIndex = 16;
             this.grpboxClients.TabStop = false;
-            this.grpboxClients.Text = "Clients";
+            this.grpboxClients.Text = "Müşteriler";
             this.grpboxClients.Paint += new System.Windows.Forms.PaintEventHandler(this.grpboxClients_Paint);
             // 
             // lvClients
@@ -247,32 +247,32 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Name";
+            this.columnHeader5.Text = "İsim";
             this.columnHeader5.Width = 141;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Surname";
+            this.columnHeader6.Text = "Soyisim";
             this.columnHeader6.Width = 153;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Height";
+            this.columnHeader7.Text = "Boy";
             this.columnHeader7.Width = 79;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Weight";
+            this.columnHeader8.Text = "Kilo";
             this.columnHeader8.Width = 87;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Birthdate";
+            this.columnHeader9.Text = "Doğum Tarihi";
             this.columnHeader9.Width = 167;
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "User Request";
+            this.columnHeader10.Text = "Kullanıcıİsteği";
             this.columnHeader10.Width = 166;
             // 
             // labelTips
@@ -282,9 +282,9 @@
             this.labelTips.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelTips.Location = new System.Drawing.Point(12, 18);
             this.labelTips.Name = "labelTips";
-            this.labelTips.Size = new System.Drawing.Size(212, 23);
+            this.labelTips.Size = new System.Drawing.Size(300, 23);
             this.labelTips.TabIndex = 31;
-            this.labelTips.Text = "You can change tips here :";
+            this.labelTips.Text = "İpuçlarını buradan değiştirebilirsiniz:";
             // 
             // radioButtonClose
             // 
@@ -292,12 +292,12 @@
             this.radioButtonClose.Checked = true;
             this.radioButtonClose.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonClose.Location = new System.Drawing.Point(335, 16);
+            this.radioButtonClose.Location = new System.Drawing.Point(423, 16);
             this.radioButtonClose.Name = "radioButtonClose";
-            this.radioButtonClose.Size = new System.Drawing.Size(117, 27);
+            this.radioButtonClose.Size = new System.Drawing.Size(123, 27);
             this.radioButtonClose.TabIndex = 30;
             this.radioButtonClose.TabStop = true;
-            this.radioButtonClose.Text = "Tips Closed";
+            this.radioButtonClose.Text = "İpucu Kapalı";
             this.radioButtonClose.UseVisualStyleBackColor = true;
             // 
             // radioButtonOpen
@@ -305,11 +305,11 @@
             this.radioButtonOpen.AutoSize = true;
             this.radioButtonOpen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonOpen.Location = new System.Drawing.Point(230, 16);
+            this.radioButtonOpen.Location = new System.Drawing.Point(318, 16);
             this.radioButtonOpen.Name = "radioButtonOpen";
-            this.radioButtonOpen.Size = new System.Drawing.Size(107, 27);
+            this.radioButtonOpen.Size = new System.Drawing.Size(109, 27);
             this.radioButtonOpen.TabIndex = 29;
-            this.radioButtonOpen.Text = "Tips Open";
+            this.radioButtonOpen.Text = "İpucu Açık";
             this.radioButtonOpen.UseVisualStyleBackColor = true;
             this.radioButtonOpen.CheckedChanged += new System.EventHandler(this.radioButtonOpen_CheckedChanged);
             // 
@@ -317,31 +317,31 @@
             // 
             this.labelDietician1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelDietician1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDietician1.Location = new System.Drawing.Point(26, 205);
+            this.labelDietician1.Location = new System.Drawing.Point(4, 205);
             this.labelDietician1.Name = "labelDietician1";
-            this.labelDietician1.Size = new System.Drawing.Size(109, 103);
+            this.labelDietician1.Size = new System.Drawing.Size(140, 109);
             this.labelDietician1.TabIndex = 32;
-            this.labelDietician1.Text = "Your customers appear in this section";
+            this.labelDietician1.Text = "Müşterileriniz bu bölümde görünür";
             // 
             // labelDietician2
             // 
             this.labelDietician2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelDietician2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDietician2.Location = new System.Drawing.Point(26, 497);
+            this.labelDietician2.Location = new System.Drawing.Point(12, 503);
             this.labelDietician2.Name = "labelDietician2";
-            this.labelDietician2.Size = new System.Drawing.Size(109, 195);
+            this.labelDietician2.Size = new System.Drawing.Size(119, 195);
             this.labelDietician2.TabIndex = 33;
-            this.labelDietician2.Text = "You can see your customers\' meals and calorie information by choosing a date";
+            this.labelDietician2.Text = "Tarih seçerek müşterilerinizin yemek ve kalori bilgilerini görebilirsiniz.";
             // 
             // labelDietician3
             // 
             this.labelDietician3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelDietician3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDietician3.Location = new System.Drawing.Point(1049, 516);
+            this.labelDietician3.Location = new System.Drawing.Point(1049, 522);
             this.labelDietician3.Name = "labelDietician3";
             this.labelDietician3.Size = new System.Drawing.Size(125, 176);
             this.labelDietician3.TabIndex = 34;
-            this.labelDietician3.Text = "Your customers\' meals and calorie information appear here";
+            this.labelDietician3.Text = "Müşterilerinizin yemek ve kalori bilgileri burada görünür";
             // 
             // pboxDietician1
             // 

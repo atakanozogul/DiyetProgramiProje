@@ -31,6 +31,11 @@ namespace DiyetProgramiProje
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodAddForm));
             this.groupBoxAddFood = new System.Windows.Forms.GroupBox();
+            this.labelAttention = new System.Windows.Forms.Label();
+            this.pboxFoodAdd4 = new System.Windows.Forms.PictureBox();
+            this.pboxFoodAdd3 = new System.Windows.Forms.PictureBox();
+            this.labelFoodAdd4 = new System.Windows.Forms.Label();
+            this.labelFoodAdd3 = new System.Windows.Forms.Label();
             this.btnFoodAdd = new FontAwesome.Sharp.IconButton();
             this.btnAddPicture = new FontAwesome.Sharp.IconButton();
             this.labelPicture = new System.Windows.Forms.Label();
@@ -53,17 +58,12 @@ namespace DiyetProgramiProje
             this.labelTips = new System.Windows.Forms.Label();
             this.radioButtonClose = new System.Windows.Forms.RadioButton();
             this.radioButtonOpen = new System.Windows.Forms.RadioButton();
-            this.labelFoodAdd3 = new System.Windows.Forms.Label();
-            this.labelFoodAdd4 = new System.Windows.Forms.Label();
-            this.pboxFoodAdd3 = new System.Windows.Forms.PictureBox();
-            this.pboxFoodAdd4 = new System.Windows.Forms.PictureBox();
-            this.labelAttention = new System.Windows.Forms.Label();
             this.groupBoxAddFood.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAddPicture)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd4)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxAddFood
@@ -92,8 +92,53 @@ namespace DiyetProgramiProje
             this.groupBoxAddFood.Size = new System.Drawing.Size(530, 535);
             this.groupBoxAddFood.TabIndex = 1;
             this.groupBoxAddFood.TabStop = false;
-            this.groupBoxAddFood.Text = "Add Food";
+            this.groupBoxAddFood.Text = "Yemek Ekle";
             this.groupBoxAddFood.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxAddFood_Paint);
+            // 
+            // labelAttention
+            // 
+            this.labelAttention.AutoSize = true;
+            this.labelAttention.Location = new System.Drawing.Point(-4, 494);
+            this.labelAttention.Name = "labelAttention";
+            this.labelAttention.Size = new System.Drawing.Size(535, 23);
+            this.labelAttention.TabIndex = 40;
+            this.labelAttention.Text = "Eklediğiniz besinlerin admin tarafından onaylandığını unutmayınız.";
+            // 
+            // pboxFoodAdd4
+            // 
+            this.pboxFoodAdd4.Image = ((System.Drawing.Image)(resources.GetObject("pboxFoodAdd4.Image")));
+            this.pboxFoodAdd4.Location = new System.Drawing.Point(363, 359);
+            this.pboxFoodAdd4.Name = "pboxFoodAdd4";
+            this.pboxFoodAdd4.Size = new System.Drawing.Size(50, 45);
+            this.pboxFoodAdd4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxFoodAdd4.TabIndex = 39;
+            this.pboxFoodAdd4.TabStop = false;
+            // 
+            // pboxFoodAdd3
+            // 
+            this.pboxFoodAdd3.Image = ((System.Drawing.Image)(resources.GetObject("pboxFoodAdd3.Image")));
+            this.pboxFoodAdd3.Location = new System.Drawing.Point(115, 359);
+            this.pboxFoodAdd3.Name = "pboxFoodAdd3";
+            this.pboxFoodAdd3.Size = new System.Drawing.Size(50, 45);
+            this.pboxFoodAdd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxFoodAdd3.TabIndex = 38;
+            this.pboxFoodAdd3.TabStop = false;
+            // 
+            // labelFoodAdd4
+            // 
+            this.labelFoodAdd4.Location = new System.Drawing.Point(318, 407);
+            this.labelFoodAdd4.Name = "labelFoodAdd4";
+            this.labelFoodAdd4.Size = new System.Drawing.Size(179, 71);
+            this.labelFoodAdd4.TabIndex = 18;
+            this.labelFoodAdd4.Text = "Yeni bir yemek eklemek için bir resim yüklemelisiniz";
+            // 
+            // labelFoodAdd3
+            // 
+            this.labelFoodAdd3.Location = new System.Drawing.Point(82, 407);
+            this.labelFoodAdd3.Name = "labelFoodAdd3";
+            this.labelFoodAdd3.Size = new System.Drawing.Size(141, 71);
+            this.labelFoodAdd3.TabIndex = 17;
+            this.labelFoodAdd3.Text = "Buraya yeni bir yemek ekleyebilirsiniz.";
             // 
             // btnFoodAdd
             // 
@@ -107,7 +152,7 @@ namespace DiyetProgramiProje
             this.btnFoodAdd.Name = "btnFoodAdd";
             this.btnFoodAdd.Size = new System.Drawing.Size(160, 50);
             this.btnFoodAdd.TabIndex = 16;
-            this.btnFoodAdd.Text = "Add Food";
+            this.btnFoodAdd.Text = "Yemek Ekle";
             this.btnFoodAdd.UseVisualStyleBackColor = true;
             this.btnFoodAdd.Click += new System.EventHandler(this.btnFoodAdd_Click);
             // 
@@ -123,7 +168,7 @@ namespace DiyetProgramiProje
             this.btnAddPicture.Name = "btnAddPicture";
             this.btnAddPicture.Size = new System.Drawing.Size(160, 50);
             this.btnAddPicture.TabIndex = 15;
-            this.btnAddPicture.Text = "Add Picture";
+            this.btnAddPicture.Text = "Fotoğraf Ekle";
             this.btnAddPicture.UseVisualStyleBackColor = true;
             this.btnAddPicture.Click += new System.EventHandler(this.btnAddPicture_Click);
             // 
@@ -132,9 +177,9 @@ namespace DiyetProgramiProje
             this.labelPicture.AutoSize = true;
             this.labelPicture.Location = new System.Drawing.Point(318, 40);
             this.labelPicture.Name = "labelPicture";
-            this.labelPicture.Size = new System.Drawing.Size(110, 23);
+            this.labelPicture.Size = new System.Drawing.Size(138, 23);
             this.labelPicture.TabIndex = 13;
-            this.labelPicture.Text = "Food Picture";
+            this.labelPicture.Text = "Yemek Fotoğrafı";
             // 
             // pboxAddPicture
             // 
@@ -151,9 +196,9 @@ namespace DiyetProgramiProje
             this.labelFoodCatName.AutoSize = true;
             this.labelFoodCatName.Location = new System.Drawing.Point(48, 201);
             this.labelFoodCatName.Name = "labelFoodCatName";
-            this.labelFoodCatName.Size = new System.Drawing.Size(175, 23);
+            this.labelFoodCatName.Size = new System.Drawing.Size(170, 23);
             this.labelFoodCatName.TabIndex = 11;
-            this.labelFoodCatName.Text = "Food Category Name";
+            this.labelFoodCatName.Text = "Yemek Kategori İsmi\r\n";
             // 
             // cboxCategoryName
             // 
@@ -175,9 +220,9 @@ namespace DiyetProgramiProje
             this.labelFoodCal.AutoSize = true;
             this.labelFoodCal.Location = new System.Drawing.Point(81, 119);
             this.labelFoodCal.Name = "labelFoodCal";
-            this.labelFoodCal.Size = new System.Drawing.Size(117, 23);
+            this.labelFoodCal.Size = new System.Drawing.Size(125, 23);
             this.labelFoodCal.TabIndex = 8;
-            this.labelFoodCal.Text = "Food Calories";
+            this.labelFoodCal.Text = "Yemek Kalorisi";
             // 
             // txtFoodName
             // 
@@ -191,9 +236,9 @@ namespace DiyetProgramiProje
             this.labelFoodName.AutoSize = true;
             this.labelFoodName.Location = new System.Drawing.Point(81, 40);
             this.labelFoodName.Name = "labelFoodName";
-            this.labelFoodName.Size = new System.Drawing.Size(100, 23);
+            this.labelFoodName.Size = new System.Drawing.Size(99, 23);
             this.labelFoodName.TabIndex = 0;
-            this.labelFoodName.Text = "Food Name";
+            this.labelFoodName.Text = "Yemek İsmi";
             // 
             // labelTitle
             // 
@@ -203,20 +248,20 @@ namespace DiyetProgramiProje
             this.labelTitle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelTitle.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTitle.Location = new System.Drawing.Point(522, 22);
+            this.labelTitle.Location = new System.Drawing.Point(509, 50);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(175, 47);
+            this.labelTitle.Size = new System.Drawing.Size(204, 47);
             this.labelTitle.TabIndex = 2;
-            this.labelTitle.Text = "FOOD ADD";
+            this.labelTitle.Text = "YEMEK EKLE";
             // 
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
             this.labelFilter.Location = new System.Drawing.Point(347, 41);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(142, 23);
+            this.labelFilter.Size = new System.Drawing.Size(139, 23);
             this.labelFilter.TabIndex = 0;
-            this.labelFilter.Text = "Filter Categories";
+            this.labelFilter.Text = "Kategori Filtrele";
             // 
             // txtFilterCategory
             // 
@@ -246,7 +291,7 @@ namespace DiyetProgramiProje
             this.groupBox2.Size = new System.Drawing.Size(283, 314);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Add Category Menu";
+            this.groupBox2.Text = "Kategori Ekleme Menüsü";
             this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox2_Paint);
             // 
             // btnAddCat
@@ -260,7 +305,7 @@ namespace DiyetProgramiProje
             this.btnAddCat.Name = "btnAddCat";
             this.btnAddCat.Size = new System.Drawing.Size(160, 50);
             this.btnAddCat.TabIndex = 5;
-            this.btnAddCat.Text = "Add Category";
+            this.btnAddCat.Text = "Kategori Ekle";
             this.btnAddCat.UseVisualStyleBackColor = true;
             this.btnAddCat.Click += new System.EventHandler(this.btnAddCat_Click);
             // 
@@ -276,9 +321,9 @@ namespace DiyetProgramiProje
             this.labelCatName.AutoSize = true;
             this.labelCatName.Location = new System.Drawing.Point(72, 54);
             this.labelCatName.Name = "labelCatName";
-            this.labelCatName.Size = new System.Drawing.Size(132, 23);
+            this.labelCatName.Size = new System.Drawing.Size(114, 23);
             this.labelCatName.TabIndex = 1;
-            this.labelCatName.Text = "Category Name";
+            this.labelCatName.Text = "Kategori İsmi";
             // 
             // groupBox1
             // 
@@ -295,7 +340,7 @@ namespace DiyetProgramiProje
             this.groupBox1.Size = new System.Drawing.Size(552, 535);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add Category";
+            this.groupBox1.Text = "Kategori Ekle";
             this.groupBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox1_Paint);
             // 
             // labelTips
@@ -305,9 +350,9 @@ namespace DiyetProgramiProje
             this.labelTips.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelTips.Location = new System.Drawing.Point(52, 22);
             this.labelTips.Name = "labelTips";
-            this.labelTips.Size = new System.Drawing.Size(212, 23);
+            this.labelTips.Size = new System.Drawing.Size(300, 23);
             this.labelTips.TabIndex = 31;
-            this.labelTips.Text = "You can change tips here :";
+            this.labelTips.Text = "İpuçlarını buradan değiştirebilirsiniz:";
             // 
             // radioButtonClose
             // 
@@ -315,12 +360,12 @@ namespace DiyetProgramiProje
             this.radioButtonClose.Checked = true;
             this.radioButtonClose.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonClose.Location = new System.Drawing.Point(375, 20);
+            this.radioButtonClose.Location = new System.Drawing.Point(463, 20);
             this.radioButtonClose.Name = "radioButtonClose";
-            this.radioButtonClose.Size = new System.Drawing.Size(117, 27);
+            this.radioButtonClose.Size = new System.Drawing.Size(123, 27);
             this.radioButtonClose.TabIndex = 30;
             this.radioButtonClose.TabStop = true;
-            this.radioButtonClose.Text = "Tips Closed";
+            this.radioButtonClose.Text = "İpucu Kapalı";
             this.radioButtonClose.UseVisualStyleBackColor = true;
             // 
             // radioButtonOpen
@@ -328,58 +373,13 @@ namespace DiyetProgramiProje
             this.radioButtonOpen.AutoSize = true;
             this.radioButtonOpen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonOpen.Location = new System.Drawing.Point(270, 20);
+            this.radioButtonOpen.Location = new System.Drawing.Point(358, 20);
             this.radioButtonOpen.Name = "radioButtonOpen";
-            this.radioButtonOpen.Size = new System.Drawing.Size(107, 27);
+            this.radioButtonOpen.Size = new System.Drawing.Size(109, 27);
             this.radioButtonOpen.TabIndex = 29;
-            this.radioButtonOpen.Text = "Tips Open";
+            this.radioButtonOpen.Text = "İpucu Açık";
             this.radioButtonOpen.UseVisualStyleBackColor = true;
             this.radioButtonOpen.CheckedChanged += new System.EventHandler(this.radioButtonOpen_CheckedChanged);
-            // 
-            // labelFoodAdd3
-            // 
-            this.labelFoodAdd3.Location = new System.Drawing.Point(82, 407);
-            this.labelFoodAdd3.Name = "labelFoodAdd3";
-            this.labelFoodAdd3.Size = new System.Drawing.Size(130, 58);
-            this.labelFoodAdd3.TabIndex = 17;
-            this.labelFoodAdd3.Text = "Here you can add a new food";
-            // 
-            // labelFoodAdd4
-            // 
-            this.labelFoodAdd4.Location = new System.Drawing.Point(318, 407);
-            this.labelFoodAdd4.Name = "labelFoodAdd4";
-            this.labelFoodAdd4.Size = new System.Drawing.Size(154, 71);
-            this.labelFoodAdd4.TabIndex = 18;
-            this.labelFoodAdd4.Text = "You must upload an image to add a new food";
-            // 
-            // pboxFoodAdd3
-            // 
-            this.pboxFoodAdd3.Image = ((System.Drawing.Image)(resources.GetObject("pboxFoodAdd3.Image")));
-            this.pboxFoodAdd3.Location = new System.Drawing.Point(115, 359);
-            this.pboxFoodAdd3.Name = "pboxFoodAdd3";
-            this.pboxFoodAdd3.Size = new System.Drawing.Size(50, 45);
-            this.pboxFoodAdd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxFoodAdd3.TabIndex = 38;
-            this.pboxFoodAdd3.TabStop = false;
-            // 
-            // pboxFoodAdd4
-            // 
-            this.pboxFoodAdd4.Image = ((System.Drawing.Image)(resources.GetObject("pboxFoodAdd4.Image")));
-            this.pboxFoodAdd4.Location = new System.Drawing.Point(363, 359);
-            this.pboxFoodAdd4.Name = "pboxFoodAdd4";
-            this.pboxFoodAdd4.Size = new System.Drawing.Size(50, 45);
-            this.pboxFoodAdd4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxFoodAdd4.TabIndex = 39;
-            this.pboxFoodAdd4.TabStop = false;
-            // 
-            // labelAttention
-            // 
-            this.labelAttention.AutoSize = true;
-            this.labelAttention.Location = new System.Drawing.Point(12, 492);
-            this.labelAttention.Name = "labelAttention";
-            this.labelAttention.Size = new System.Drawing.Size(514, 23);
-            this.labelAttention.TabIndex = 40;
-            this.labelAttention.Text = "Do not forget that the foods you add are approved by the admin";
             // 
             // FoodAddForm
             // 
@@ -402,13 +402,13 @@ namespace DiyetProgramiProje
             this.Load += new System.EventHandler(this.FoodAddForm_Load);
             this.groupBoxAddFood.ResumeLayout(false);
             this.groupBoxAddFood.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAddPicture)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxFoodAdd4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

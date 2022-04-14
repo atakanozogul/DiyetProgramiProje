@@ -75,7 +75,7 @@ namespace DiyetProgramiProje
             this.gboxMessages.Size = new System.Drawing.Size(615, 569);
             this.gboxMessages.TabIndex = 0;
             this.gboxMessages.TabStop = false;
-            this.gboxMessages.Text = "Messages";
+            this.gboxMessages.Text = "Gelen Mesajlar";
             this.gboxMessages.Paint += new System.Windows.Forms.PaintEventHandler(this.gboxMessages_Paint);
             this.gboxMessages.Enter += new System.EventHandler(this.gboxMessages_Enter);
             // 
@@ -86,7 +86,7 @@ namespace DiyetProgramiProje
             this.labelMessage2.Name = "labelMessage2";
             this.labelMessage2.Size = new System.Drawing.Size(136, 57);
             this.labelMessage2.TabIndex = 40;
-            this.labelMessage2.Text = "Your messages appear here";
+            this.labelMessage2.Text = "Mesajlarınız burada görünür";
             // 
             // labelMessage1
             // 
@@ -94,7 +94,7 @@ namespace DiyetProgramiProje
             this.labelMessage1.Name = "labelMessage1";
             this.labelMessage1.Size = new System.Drawing.Size(137, 56);
             this.labelMessage1.TabIndex = 39;
-            this.labelMessage1.Text = "Your messages are listed here";
+            this.labelMessage1.Text = "Mesajlarınız burada listelenir";
             // 
             // pictureBox2
             // 
@@ -121,18 +121,18 @@ namespace DiyetProgramiProje
             this.labelMessage.AutoSize = true;
             this.labelMessage.Location = new System.Drawing.Point(232, 44);
             this.labelMessage.Name = "labelMessage";
-            this.labelMessage.Size = new System.Drawing.Size(81, 23);
+            this.labelMessage.Size = new System.Drawing.Size(59, 23);
             this.labelMessage.TabIndex = 3;
-            this.labelMessage.Text = "Message";
+            this.labelMessage.Text = "Mesaj";
             // 
             // labelList
             // 
             this.labelList.AutoSize = true;
             this.labelList.Location = new System.Drawing.Point(40, 44);
             this.labelList.Name = "labelList";
-            this.labelList.Size = new System.Drawing.Size(113, 23);
+            this.labelList.Size = new System.Drawing.Size(114, 23);
             this.labelList.TabIndex = 2;
-            this.labelList.Text = "Message List";
+            this.labelList.Text = "Mesaj Listesi";
             // 
             // txtShowMessage
             // 
@@ -170,7 +170,7 @@ namespace DiyetProgramiProje
             this.gboxReply.Size = new System.Drawing.Size(496, 569);
             this.gboxReply.TabIndex = 3;
             this.gboxReply.TabStop = false;
-            this.gboxReply.Text = "Reply";
+            this.gboxReply.Text = "Mesaj Gönder";
             this.gboxReply.Paint += new System.Windows.Forms.PaintEventHandler(this.gboxReply_Paint);
             // 
             // labelReply1
@@ -179,7 +179,7 @@ namespace DiyetProgramiProje
             this.labelReply1.Name = "labelReply1";
             this.labelReply1.Size = new System.Drawing.Size(225, 80);
             this.labelReply1.TabIndex = 38;
-            this.labelReply1.Text = "You can write your message with its title here and send it";
+            this.labelReply1.Text = "Mesajınızı başlığıyla birlikte buraya yazıp gönderebilirsiniz.";
             // 
             // pictureBox1
             // 
@@ -203,7 +203,7 @@ namespace DiyetProgramiProje
             this.btnReplySend.Name = "btnReplySend";
             this.btnReplySend.Size = new System.Drawing.Size(160, 50);
             this.btnReplySend.TabIndex = 4;
-            this.btnReplySend.Text = "Send";
+            this.btnReplySend.Text = "Gönder";
             this.btnReplySend.UseVisualStyleBackColor = true;
             this.btnReplySend.Click += new System.EventHandler(this.btnReplySend_Click);
             // 
@@ -212,18 +212,18 @@ namespace DiyetProgramiProje
             this.labelText.AutoSize = true;
             this.labelText.Location = new System.Drawing.Point(44, 122);
             this.labelText.Name = "labelText";
-            this.labelText.Size = new System.Drawing.Size(118, 23);
+            this.labelText.Size = new System.Drawing.Size(112, 23);
             this.labelText.TabIndex = 2;
-            this.labelText.Text = "Message Text";
+            this.labelText.Text = "Mesaj Metni";
             // 
             // labelHeader
             // 
             this.labelHeader.AutoSize = true;
             this.labelHeader.Location = new System.Drawing.Point(44, 44);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(143, 23);
+            this.labelHeader.Size = new System.Drawing.Size(115, 23);
             this.labelHeader.TabIndex = 2;
-            this.labelHeader.Text = "Message Header";
+            this.labelHeader.Text = "Mesaj Başlığı";
             // 
             // txtHeader
             // 
@@ -247,9 +247,9 @@ namespace DiyetProgramiProje
             this.labelTips.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelTips.Location = new System.Drawing.Point(23, 42);
             this.labelTips.Name = "labelTips";
-            this.labelTips.Size = new System.Drawing.Size(212, 23);
+            this.labelTips.Size = new System.Drawing.Size(300, 23);
             this.labelTips.TabIndex = 31;
-            this.labelTips.Text = "You can change tips here :";
+            this.labelTips.Text = "İpuçlarını buradan değiştirebilirsiniz:";
             // 
             // radioButtonClose
             // 
@@ -257,12 +257,12 @@ namespace DiyetProgramiProje
             this.radioButtonClose.Checked = true;
             this.radioButtonClose.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonClose.Location = new System.Drawing.Point(346, 40);
+            this.radioButtonClose.Location = new System.Drawing.Point(434, 42);
             this.radioButtonClose.Name = "radioButtonClose";
-            this.radioButtonClose.Size = new System.Drawing.Size(117, 27);
+            this.radioButtonClose.Size = new System.Drawing.Size(123, 27);
             this.radioButtonClose.TabIndex = 30;
             this.radioButtonClose.TabStop = true;
-            this.radioButtonClose.Text = "Tips Closed";
+            this.radioButtonClose.Text = "İpucu Kapalı";
             this.radioButtonClose.UseVisualStyleBackColor = true;
             // 
             // radioButtonOpen
@@ -270,11 +270,11 @@ namespace DiyetProgramiProje
             this.radioButtonOpen.AutoSize = true;
             this.radioButtonOpen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonOpen.Location = new System.Drawing.Point(241, 40);
+            this.radioButtonOpen.Location = new System.Drawing.Point(329, 42);
             this.radioButtonOpen.Name = "radioButtonOpen";
-            this.radioButtonOpen.Size = new System.Drawing.Size(107, 27);
+            this.radioButtonOpen.Size = new System.Drawing.Size(109, 27);
             this.radioButtonOpen.TabIndex = 29;
-            this.radioButtonOpen.Text = "Tips Open";
+            this.radioButtonOpen.Text = "İpucu Açık";
             this.radioButtonOpen.UseVisualStyleBackColor = true;
             this.radioButtonOpen.CheckedChanged += new System.EventHandler(this.radioButtonOpen_CheckedChanged);
             // 
@@ -294,7 +294,6 @@ namespace DiyetProgramiProje
             this.Name = "UserMessagesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserMessagesForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserMessagesForm_FormClosed);
             this.Load += new System.EventHandler(this.UserMessagesForm_Load);
             this.gboxMessages.ResumeLayout(false);
             this.gboxMessages.PerformLayout();

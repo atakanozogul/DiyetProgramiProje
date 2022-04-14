@@ -57,7 +57,7 @@
                         Id = c.Int(nullable: false, identity: true),
                         FirstName = c.String(nullable: false, maxLength: 50),
                         LastName = c.String(nullable: false, maxLength: 50),
-                        BirthDate = c.DateTime(nullable: false),
+                        BirthDate = c.DateTime(nullable: false, storeType: "smalldatetime"),
                         Gender = c.Int(nullable: false),
                         Height = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Weight = c.Decimal(nullable: false, precision: 18, scale: 2),

@@ -157,7 +157,7 @@ namespace DiyetProgramiProje
             this.labelRegister3.Name = "labelRegister3";
             this.labelRegister3.Size = new System.Drawing.Size(243, 59);
             this.labelRegister3.TabIndex = 40;
-            this.labelRegister3.Text = "You can join us after you enter your information";
+            this.labelRegister3.Text = "Bilgilerinizi girdikten sonra aramıza katılabilirsiniz.\r\n";
             // 
             // pBoxRegister3
             // 
@@ -180,7 +180,7 @@ namespace DiyetProgramiProje
             this.btnUserJoin.Name = "btnUserJoin";
             this.btnUserJoin.Size = new System.Drawing.Size(160, 50);
             this.btnUserJoin.TabIndex = 24;
-            this.btnUserJoin.Text = "JOIN !";
+            this.btnUserJoin.Text = "KATIL !";
             this.btnUserJoin.UseVisualStyleBackColor = true;
             this.btnUserJoin.Click += new System.EventHandler(this.btnUserJoin_Click);
             // 
@@ -199,9 +199,9 @@ namespace DiyetProgramiProje
             this.labelExercise.Location = new System.Drawing.Point(4, 368);
             this.labelExercise.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelExercise.Name = "labelExercise";
-            this.labelExercise.Size = new System.Drawing.Size(125, 23);
+            this.labelExercise.Size = new System.Drawing.Size(139, 23);
             this.labelExercise.TabIndex = 22;
-            this.labelExercise.Text = "Daily Exercise:";
+            this.labelExercise.Text = "Günlük Egzersiz:";
             // 
             // groupBoxDietician
             // 
@@ -293,9 +293,9 @@ namespace DiyetProgramiProje
             this.labelLastName.Location = new System.Drawing.Point(41, 109);
             this.labelLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(93, 23);
+            this.labelLastName.Size = new System.Drawing.Size(76, 23);
             this.labelLastName.TabIndex = 3;
-            this.labelLastName.Text = "Last Name";
+            this.labelLastName.Text = "Soyisim:";
             // 
             // lblFirstName
             // 
@@ -360,9 +360,9 @@ namespace DiyetProgramiProje
             this.labelSelectDietician.Location = new System.Drawing.Point(563, 7);
             this.labelSelectDietician.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSelectDietician.Name = "labelSelectDietician";
-            this.labelSelectDietician.Size = new System.Drawing.Size(138, 23);
+            this.labelSelectDietician.Size = new System.Drawing.Size(167, 23);
             this.labelSelectDietician.TabIndex = 18;
-            this.labelSelectDietician.Text = "Select Dietician:";
+            this.labelSelectDietician.Text = "Diyetisten Seçeneği";
             // 
             // cboxRequest
             // 
@@ -379,9 +379,9 @@ namespace DiyetProgramiProje
             this.labelRequest.Location = new System.Drawing.Point(277, 368);
             this.labelRequest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRequest.Name = "labelRequest";
-            this.labelRequest.Size = new System.Drawing.Size(122, 23);
+            this.labelRequest.Size = new System.Drawing.Size(130, 23);
             this.labelRequest.TabIndex = 16;
-            this.labelRequest.Text = "User Request:";
+            this.labelRequest.Text = "Kullanıcı İsteği:";
             // 
             // nudWeight
             // 
@@ -402,9 +402,9 @@ namespace DiyetProgramiProje
             this.labelWeight.Location = new System.Drawing.Point(166, 263);
             this.labelWeight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelWeight.Name = "labelWeight";
-            this.labelWeight.Size = new System.Drawing.Size(72, 23);
+            this.labelWeight.Size = new System.Drawing.Size(45, 23);
             this.labelWeight.TabIndex = 14;
-            this.labelWeight.Text = "Weight:";
+            this.labelWeight.Text = "Kilo:";
             // 
             // nudHeight
             // 
@@ -435,9 +435,9 @@ namespace DiyetProgramiProje
             this.labelHeight.Location = new System.Drawing.Point(2, 263);
             this.labelHeight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHeight.Name = "labelHeight";
-            this.labelHeight.Size = new System.Drawing.Size(68, 23);
+            this.labelHeight.Size = new System.Drawing.Size(45, 23);
             this.labelHeight.TabIndex = 12;
-            this.labelHeight.Text = "Height:";
+            this.labelHeight.Text = "Boy:";
             // 
             // rbFemale
             // 
@@ -469,9 +469,9 @@ namespace DiyetProgramiProje
             this.labelGender.Location = new System.Drawing.Point(344, 169);
             this.labelGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(74, 23);
+            this.labelGender.Size = new System.Drawing.Size(79, 23);
             this.labelGender.TabIndex = 10;
-            this.labelGender.Text = "Gender:";
+            this.labelGender.Text = "Cinsiyet:";
             // 
             // dtBirthDate
             // 
@@ -487,9 +487,9 @@ namespace DiyetProgramiProje
             this.labelDate.Location = new System.Drawing.Point(2, 169);
             this.labelDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(97, 23);
+            this.labelDate.Size = new System.Drawing.Size(119, 23);
             this.labelDate.TabIndex = 8;
-            this.labelDate.Text = "Birth Date:";
+            this.labelDate.Text = "Doğum Tarihi:";
             // 
             // txtLastName
             // 
@@ -523,9 +523,9 @@ namespace DiyetProgramiProje
             this.labelName.Location = new System.Drawing.Point(2, 80);
             this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(95, 23);
+            this.labelName.Size = new System.Drawing.Size(48, 23);
             this.labelName.TabIndex = 4;
-            this.labelName.Text = "Firstname:";
+            this.labelName.Text = "İsim:";
             // 
             // txtPassword
             // 
@@ -561,9 +561,9 @@ namespace DiyetProgramiProje
             this.labelMail.Location = new System.Drawing.Point(2, 5);
             this.labelMail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMail.Name = "labelMail";
-            this.labelMail.Size = new System.Drawing.Size(58, 23);
+            this.labelMail.Size = new System.Drawing.Size(74, 23);
             this.labelMail.TabIndex = 0;
-            this.labelMail.Text = "Email:";
+            this.labelMail.Text = "E-Posta:";
             // 
             // rbUser
             // 
@@ -575,10 +575,10 @@ namespace DiyetProgramiProje
             this.rbUser.Location = new System.Drawing.Point(22, 31);
             this.rbUser.Margin = new System.Windows.Forms.Padding(2);
             this.rbUser.Name = "rbUser";
-            this.rbUser.Size = new System.Drawing.Size(160, 27);
+            this.rbUser.Size = new System.Drawing.Size(142, 27);
             this.rbUser.TabIndex = 2;
             this.rbUser.TabStop = true;
-            this.rbUser.Text = "Register As User";
+            this.rbUser.Text = "Kullanıcı Kaydı";
             this.rbUser.UseVisualStyleBackColor = false;
             this.rbUser.CheckedChanged += new System.EventHandler(this.rbUser_CheckedChanged);
             // 
@@ -591,9 +591,9 @@ namespace DiyetProgramiProje
             this.rbDietician.Location = new System.Drawing.Point(192, 31);
             this.rbDietician.Margin = new System.Windows.Forms.Padding(2);
             this.rbDietician.Name = "rbDietician";
-            this.rbDietician.Size = new System.Drawing.Size(193, 27);
+            this.rbDietician.Size = new System.Drawing.Size(159, 27);
             this.rbDietician.TabIndex = 2;
-            this.rbDietician.Text = "Register As Dietician";
+            this.rbDietician.Text = "Diyetisyen Kaydı\r\n";
             this.rbDietician.UseVisualStyleBackColor = false;
             this.rbDietician.CheckedChanged += new System.EventHandler(this.rbDietician_CheckedChanged);
             // 
@@ -611,7 +611,7 @@ namespace DiyetProgramiProje
             this.groupBoxRegisterType.Size = new System.Drawing.Size(415, 79);
             this.groupBoxRegisterType.TabIndex = 3;
             this.groupBoxRegisterType.TabStop = false;
-            this.groupBoxRegisterType.Text = "Register Type";
+            this.groupBoxRegisterType.Text = "Kayıt Türü";
             this.groupBoxRegisterType.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxRegisterType_Paint);
             // 
             // panelDietician
@@ -656,7 +656,7 @@ namespace DiyetProgramiProje
             this.labelRegister2.Name = "labelRegister2";
             this.labelRegister2.Size = new System.Drawing.Size(243, 59);
             this.labelRegister2.TabIndex = 38;
-            this.labelRegister2.Text = "You can join us after you enter your information";
+            this.labelRegister2.Text = "Bilgilerinizi girdikten sonra aramıza katılabilirsiniz.\r\n";
             // 
             // btnJoinDietician
             // 
@@ -670,7 +670,7 @@ namespace DiyetProgramiProje
             this.btnJoinDietician.Name = "btnJoinDietician";
             this.btnJoinDietician.Size = new System.Drawing.Size(160, 50);
             this.btnJoinDietician.TabIndex = 23;
-            this.btnJoinDietician.Text = "JOIN !";
+            this.btnJoinDietician.Text = "KATIL !";
             this.btnJoinDietician.UseVisualStyleBackColor = true;
             this.btnJoinDietician.Click += new System.EventHandler(this.btnJoinDietician_Click);
             // 
@@ -684,7 +684,7 @@ namespace DiyetProgramiProje
             this.groupBoxPhoto.Size = new System.Drawing.Size(374, 231);
             this.groupBoxPhoto.TabIndex = 22;
             this.groupBoxPhoto.TabStop = false;
-            this.groupBoxPhoto.Text = "Photo";
+            this.groupBoxPhoto.Text = "Fotoğraf";
             this.groupBoxPhoto.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxPhoto_Paint);
             // 
             // btnAddPhoto
@@ -699,7 +699,7 @@ namespace DiyetProgramiProje
             this.btnAddPhoto.Name = "btnAddPhoto";
             this.btnAddPhoto.Size = new System.Drawing.Size(160, 50);
             this.btnAddPhoto.TabIndex = 21;
-            this.btnAddPhoto.Text = "Add Photo";
+            this.btnAddPhoto.Text = "Fotoğraf Ekle";
             this.btnAddPhoto.UseVisualStyleBackColor = true;
             this.btnAddPhoto.Click += new System.EventHandler(this.btnAddPhoto_Click);
             // 
@@ -722,9 +722,9 @@ namespace DiyetProgramiProje
             this.labelDieticianMail.Location = new System.Drawing.Point(15, 10);
             this.labelDieticianMail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDieticianMail.Name = "labelDieticianMail";
-            this.labelDieticianMail.Size = new System.Drawing.Size(58, 23);
+            this.labelDieticianMail.Size = new System.Drawing.Size(74, 23);
             this.labelDieticianMail.TabIndex = 8;
-            this.labelDieticianMail.Text = "Email:";
+            this.labelDieticianMail.Text = "E-Posta:";
             // 
             // txtDGraduation
             // 
@@ -741,9 +741,9 @@ namespace DiyetProgramiProje
             this.labelDieticianGraduation.Location = new System.Drawing.Point(14, 376);
             this.labelDieticianGraduation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDieticianGraduation.Name = "labelDieticianGraduation";
-            this.labelDieticianGraduation.Size = new System.Drawing.Size(103, 23);
+            this.labelDieticianGraduation.Size = new System.Drawing.Size(101, 23);
             this.labelDieticianGraduation.TabIndex = 16;
-            this.labelDieticianGraduation.Text = "Graduation:";
+            this.labelDieticianGraduation.Text = "Mezuniyet:";
             // 
             // txtDLastName
             // 
@@ -760,9 +760,9 @@ namespace DiyetProgramiProje
             this.labelDieticianLastName.Location = new System.Drawing.Point(14, 283);
             this.labelDieticianLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDieticianLastName.Name = "labelDieticianLastName";
-            this.labelDieticianLastName.Size = new System.Drawing.Size(95, 23);
+            this.labelDieticianLastName.Size = new System.Drawing.Size(76, 23);
             this.labelDieticianLastName.TabIndex = 14;
-            this.labelDieticianLastName.Text = "Lastname: ";
+            this.labelDieticianLastName.Text = "Soyisim:";
             // 
             // txtDFirstName
             // 
@@ -779,9 +779,9 @@ namespace DiyetProgramiProje
             this.labelDieticianFirstName.Location = new System.Drawing.Point(17, 189);
             this.labelDieticianFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDieticianFirstName.Name = "labelDieticianFirstName";
-            this.labelDieticianFirstName.Size = new System.Drawing.Size(95, 23);
+            this.labelDieticianFirstName.Size = new System.Drawing.Size(48, 23);
             this.labelDieticianFirstName.TabIndex = 12;
-            this.labelDieticianFirstName.Text = "Firstname:";
+            this.labelDieticianFirstName.Text = "İsim:";
             // 
             // txtDPassword
             // 
@@ -798,9 +798,9 @@ namespace DiyetProgramiProje
             this.labelDieticianPassword.Location = new System.Drawing.Point(15, 101);
             this.labelDieticianPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDieticianPassword.Name = "labelDieticianPassword";
-            this.labelDieticianPassword.Size = new System.Drawing.Size(91, 23);
+            this.labelDieticianPassword.Size = new System.Drawing.Size(52, 23);
             this.labelDieticianPassword.TabIndex = 10;
-            this.labelDieticianPassword.Text = "Password:";
+            this.labelDieticianPassword.Text = "Şifre:";
             // 
             // txtDEmail
             // 
@@ -814,16 +814,16 @@ namespace DiyetProgramiProje
             // 
             this.labelRegister1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelRegister1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelRegister1.Location = new System.Drawing.Point(23, 57);
+            this.labelRegister1.Location = new System.Drawing.Point(-1, 79);
             this.labelRegister1.Name = "labelRegister1";
-            this.labelRegister1.Size = new System.Drawing.Size(122, 110);
+            this.labelRegister1.Size = new System.Drawing.Size(156, 88);
             this.labelRegister1.TabIndex = 5;
-            this.labelRegister1.Text = "You can change your registration type here";
+            this.labelRegister1.Text = "Kayıt türünüzü buradan değiştirebilirsiniz.\r\n";
             // 
             // pBoxRegister1
             // 
             this.pBoxRegister1.Image = ((System.Drawing.Image)(resources.GetObject("pBoxRegister1.Image")));
-            this.pBoxRegister1.Location = new System.Drawing.Point(151, 96);
+            this.pBoxRegister1.Location = new System.Drawing.Point(150, 87);
             this.pBoxRegister1.Name = "pBoxRegister1";
             this.pBoxRegister1.Size = new System.Drawing.Size(50, 45);
             this.pBoxRegister1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -835,11 +835,11 @@ namespace DiyetProgramiProje
             this.labelTips.AutoSize = true;
             this.labelTips.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelTips.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTips.Location = new System.Drawing.Point(211, 32);
+            this.labelTips.Location = new System.Drawing.Point(214, 23);
             this.labelTips.Name = "labelTips";
-            this.labelTips.Size = new System.Drawing.Size(212, 23);
+            this.labelTips.Size = new System.Drawing.Size(300, 23);
             this.labelTips.TabIndex = 37;
-            this.labelTips.Text = "You can change tips here :";
+            this.labelTips.Text = "İpuçlarını buradan değiştirebilirsiniz:";
             // 
             // radioButtonClose
             // 
@@ -847,12 +847,12 @@ namespace DiyetProgramiProje
             this.radioButtonClose.Checked = true;
             this.radioButtonClose.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonClose.Location = new System.Drawing.Point(544, 30);
+            this.radioButtonClose.Location = new System.Drawing.Point(625, 21);
             this.radioButtonClose.Name = "radioButtonClose";
-            this.radioButtonClose.Size = new System.Drawing.Size(117, 27);
+            this.radioButtonClose.Size = new System.Drawing.Size(123, 27);
             this.radioButtonClose.TabIndex = 36;
             this.radioButtonClose.TabStop = true;
-            this.radioButtonClose.Text = "Tips Closed";
+            this.radioButtonClose.Text = "İpucu Kapalı";
             this.radioButtonClose.UseVisualStyleBackColor = true;
             // 
             // radioButtonOpen
@@ -860,11 +860,11 @@ namespace DiyetProgramiProje
             this.radioButtonOpen.AutoSize = true;
             this.radioButtonOpen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonOpen.Location = new System.Drawing.Point(439, 30);
+            this.radioButtonOpen.Location = new System.Drawing.Point(520, 21);
             this.radioButtonOpen.Name = "radioButtonOpen";
-            this.radioButtonOpen.Size = new System.Drawing.Size(107, 27);
+            this.radioButtonOpen.Size = new System.Drawing.Size(109, 27);
             this.radioButtonOpen.TabIndex = 35;
-            this.radioButtonOpen.Text = "Tips Open";
+            this.radioButtonOpen.Text = "İpucu Açık";
             this.radioButtonOpen.UseVisualStyleBackColor = true;
             this.radioButtonOpen.CheckedChanged += new System.EventHandler(this.radioButtonOpen_CheckedChanged);
             // 
@@ -872,16 +872,16 @@ namespace DiyetProgramiProje
             // 
             this.labelRegister4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelRegister4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelRegister4.Location = new System.Drawing.Point(769, 105);
+            this.labelRegister4.Location = new System.Drawing.Point(769, 79);
             this.labelRegister4.Name = "labelRegister4";
-            this.labelRegister4.Size = new System.Drawing.Size(188, 57);
+            this.labelRegister4.Size = new System.Drawing.Size(188, 74);
             this.labelRegister4.TabIndex = 38;
-            this.labelRegister4.Text = "You can check dietitian information here";
+            this.labelRegister4.Text = "Diyetisyen bilgilerini buradan kontrol edebilirsin.\r\n";
             // 
             // pBoxRegister4
             // 
             this.pBoxRegister4.Image = ((System.Drawing.Image)(resources.GetObject("pBoxRegister4.Image")));
-            this.pBoxRegister4.Location = new System.Drawing.Point(713, 108);
+            this.pBoxRegister4.Location = new System.Drawing.Point(713, 87);
             this.pBoxRegister4.Name = "pBoxRegister4";
             this.pBoxRegister4.Size = new System.Drawing.Size(50, 45);
             this.pBoxRegister4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -909,7 +909,6 @@ namespace DiyetProgramiProje
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegisterForm_FormClosed);
             this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.panelUser.ResumeLayout(false);
             this.panelUser.PerformLayout();

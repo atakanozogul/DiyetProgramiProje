@@ -132,7 +132,7 @@ namespace DiyetProgramiProje
             }
             else
             {
-                MessageBox.Show("Any client selected");
+                MessageBox.Show("Hiçbir kullanıcı seçilmedi.");
             }
         }
         private void cboxLvMealTime_SelectedIndexChanged(object sender, EventArgs e)

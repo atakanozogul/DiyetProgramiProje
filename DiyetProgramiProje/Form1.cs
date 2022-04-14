@@ -79,7 +79,7 @@ namespace DiyetProgramiProje
                 }
                 else
                 {
-                    MessageBox.Show("Please check your login information");
+                    MessageBox.Show("Lütfen giriş bilgilerini kontrol ediniz.");
                 }
             }
             txtEmail.Text = string.Empty;

@@ -75,18 +75,11 @@ namespace DiyetProgramiProje
                 txtShowMessage.Text = message.Text;
             }
         }
-
-        private void UserMessagesForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Form frm = Application.OpenForms["UserForm"];
-            //frm.Show();
-        }
-
         private void btnReplySend_Click(object sender, EventArgs e)
         {
             if (txtHeader.Text == string.Empty || txtText.Text == string.Empty)
             {
-                MessageBox.Show("Please fill all blanks");
+                MessageBox.Show("Lütfen bütün boşlukları doldurun.");
             }
 
             else
@@ -97,7 +90,7 @@ namespace DiyetProgramiProje
                 dieticianMessage.UserId = userRegisterInfo.Id;
                 dieticianMessage.DieticianId = user.DieticianId;
                 dieticianMessageService.Add(dieticianMessage);
-                MessageBox.Show("Message has been sended");
+                MessageBox.Show("Mesaj gönderildi.");
             }
         }
 

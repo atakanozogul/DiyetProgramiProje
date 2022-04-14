@@ -44,6 +44,7 @@
             this.activeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.passiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxCatFood = new System.Windows.Forms.GroupBox();
+            this.labelTip2 = new System.Windows.Forms.Label();
             this.btnUpdateCatAndFood = new System.Windows.Forms.Button();
             this.groupBoxCatFilter = new System.Windows.Forms.GroupBox();
             this.rbCatActive = new System.Windows.Forms.RadioButton();
@@ -74,7 +75,6 @@
             this.rbUserPassives = new System.Windows.Forms.RadioButton();
             this.rbUserGetAll = new System.Windows.Forms.RadioButton();
             this.labelTip1 = new System.Windows.Forms.Label();
-            this.labelTip2 = new System.Windows.Forms.Label();
             this.grpboxClients.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.groupBoxCatFood.SuspendLayout();
@@ -96,7 +96,7 @@
             this.grpboxClients.Size = new System.Drawing.Size(1089, 323);
             this.grpboxClients.TabIndex = 17;
             this.grpboxClients.TabStop = false;
-            this.grpboxClients.Text = "Clients";
+            this.grpboxClients.Text = "Müşteriler";
             this.grpboxClients.Paint += new System.Windows.Forms.PaintEventHandler(this.grpboxClients_Paint);
             // 
             // lvUserInf
@@ -129,42 +129,42 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Name";
+            this.columnHeader5.Text = "İsim";
             this.columnHeader5.Width = 103;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Surname";
+            this.columnHeader6.Text = "Soyisim";
             this.columnHeader6.Width = 118;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Height";
+            this.columnHeader7.Text = "Boy";
             this.columnHeader7.Width = 99;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Weight";
+            this.columnHeader8.Text = "Kilo";
             this.columnHeader8.Width = 110;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Birthdate";
+            this.columnHeader9.Text = "DoğumTarihi";
             this.columnHeader9.Width = 130;
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "User Request";
+            this.columnHeader10.Text = "Kullanıcıİsteği";
             this.columnHeader10.Width = 188;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "User Status";
+            this.columnHeader2.Text = "KullanıcıDurumu";
             this.columnHeader2.Width = 157;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Gender";
+            this.columnHeader3.Text = "Cinsiyet";
             this.columnHeader3.Width = 87;
             // 
             // contextMenuStrip1
@@ -207,8 +207,18 @@
             this.groupBoxCatFood.Size = new System.Drawing.Size(1089, 367);
             this.groupBoxCatFood.TabIndex = 18;
             this.groupBoxCatFood.TabStop = false;
-            this.groupBoxCatFood.Text = "Membership Request Panel";
+            this.groupBoxCatFood.Text = "Üye İstek Paneli";
             this.groupBoxCatFood.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxCatFood_Paint);
+            // 
+            // labelTip2
+            // 
+            this.labelTip2.AutoSize = true;
+            this.labelTip2.Location = new System.Drawing.Point(17, 323);
+            this.labelTip2.Name = "labelTip2";
+            this.labelTip2.Size = new System.Drawing.Size(788, 23);
+            this.labelTip2.TabIndex = 42;
+            this.labelTip2.Text = "İpucu : Güncelleme işlemleri için tablolardan seçim yapabilir ve güncelle butonun" +
+    "a tıklayabilirsiniz.";
             // 
             // btnUpdateCatAndFood
             // 
@@ -236,7 +246,7 @@
             this.groupBoxCatFilter.Size = new System.Drawing.Size(379, 68);
             this.groupBoxCatFilter.TabIndex = 40;
             this.groupBoxCatFilter.TabStop = false;
-            this.groupBoxCatFilter.Text = "Category Filter";
+            this.groupBoxCatFilter.Text = "Kategori Filtreleme";
             this.groupBoxCatFilter.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxCatFilter_Paint);
             // 
             // rbCatActive
@@ -244,9 +254,9 @@
             this.rbCatActive.AutoSize = true;
             this.rbCatActive.Location = new System.Drawing.Point(16, 28);
             this.rbCatActive.Name = "rbCatActive";
-            this.rbCatActive.Size = new System.Drawing.Size(86, 27);
+            this.rbCatActive.Size = new System.Drawing.Size(88, 27);
             this.rbCatActive.TabIndex = 29;
-            this.rbCatActive.Text = "Actives";
+            this.rbCatActive.Text = "Aktifler";
             this.rbCatActive.UseVisualStyleBackColor = true;
             this.rbCatActive.CheckedChanged += new System.EventHandler(this.rbCatActive_CheckedChanged);
             // 
@@ -255,9 +265,9 @@
             this.rbCatPassive.AutoSize = true;
             this.rbCatPassive.Location = new System.Drawing.Point(102, 28);
             this.rbCatPassive.Name = "rbCatPassive";
-            this.rbCatPassive.Size = new System.Drawing.Size(95, 27);
+            this.rbCatPassive.Size = new System.Drawing.Size(88, 27);
             this.rbCatPassive.TabIndex = 30;
-            this.rbCatPassive.Text = "Passives";
+            this.rbCatPassive.Text = "Pasifler";
             this.rbCatPassive.UseVisualStyleBackColor = true;
             this.rbCatPassive.CheckedChanged += new System.EventHandler(this.rbCatPassive_CheckedChanged);
             // 
@@ -267,10 +277,10 @@
             this.rbCatActivePassive.Checked = true;
             this.rbCatActivePassive.Location = new System.Drawing.Point(201, 28);
             this.rbCatActivePassive.Name = "rbCatActivePassive";
-            this.rbCatActivePassive.Size = new System.Drawing.Size(172, 27);
+            this.rbCatActivePassive.Size = new System.Drawing.Size(154, 27);
             this.rbCatActivePassive.TabIndex = 31;
             this.rbCatActivePassive.TabStop = true;
-            this.rbCatActivePassive.Text = "Get All Categories";
+            this.rbCatActivePassive.Text = "Tüm Kategoriler";
             this.rbCatActivePassive.UseVisualStyleBackColor = true;
             this.rbCatActivePassive.CheckedChanged += new System.EventHandler(this.rbCatActivePassive_CheckedChanged);
             // 
@@ -286,7 +296,7 @@
             this.groupBoxFoodFilter.Size = new System.Drawing.Size(394, 69);
             this.groupBoxFoodFilter.TabIndex = 39;
             this.groupBoxFoodFilter.TabStop = false;
-            this.groupBoxFoodFilter.Text = "Food Filter";
+            this.groupBoxFoodFilter.Text = "Yemek Filtreleme";
             this.groupBoxFoodFilter.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxFoodFilter_Paint);
             // 
             // rbFoodActives
@@ -296,9 +306,9 @@
             this.rbFoodActives.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbFoodActives.Location = new System.Drawing.Point(23, 25);
             this.rbFoodActives.Name = "rbFoodActives";
-            this.rbFoodActives.Size = new System.Drawing.Size(86, 27);
+            this.rbFoodActives.Size = new System.Drawing.Size(88, 27);
             this.rbFoodActives.TabIndex = 33;
-            this.rbFoodActives.Text = "Actives";
+            this.rbFoodActives.Text = "Aktifler";
             this.rbFoodActives.UseVisualStyleBackColor = true;
             this.rbFoodActives.CheckedChanged += new System.EventHandler(this.rbFoodActives_CheckedChanged);
             // 
@@ -309,9 +319,9 @@
             this.rbFoodPassives.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbFoodPassives.Location = new System.Drawing.Point(115, 24);
             this.rbFoodPassives.Name = "rbFoodPassives";
-            this.rbFoodPassives.Size = new System.Drawing.Size(95, 27);
+            this.rbFoodPassives.Size = new System.Drawing.Size(88, 27);
             this.rbFoodPassives.TabIndex = 34;
-            this.rbFoodPassives.Text = "Passives";
+            this.rbFoodPassives.Text = "Pasifler";
             this.rbFoodPassives.UseVisualStyleBackColor = true;
             this.rbFoodPassives.CheckedChanged += new System.EventHandler(this.rbFoodPassives_CheckedChanged);
             // 
@@ -323,10 +333,10 @@
             this.rbFoodsAll.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbFoodsAll.Location = new System.Drawing.Point(216, 25);
             this.rbFoodsAll.Name = "rbFoodsAll";
-            this.rbFoodsAll.Size = new System.Drawing.Size(172, 27);
+            this.rbFoodsAll.Size = new System.Drawing.Size(139, 27);
             this.rbFoodsAll.TabIndex = 35;
             this.rbFoodsAll.TabStop = true;
-            this.rbFoodsAll.Text = "Get All Categories";
+            this.rbFoodsAll.Text = "Tüm Yemekler";
             this.rbFoodsAll.UseVisualStyleBackColor = true;
             this.rbFoodsAll.CheckedChanged += new System.EventHandler(this.rbFoodsAll_CheckedChanged);
             // 
@@ -380,17 +390,17 @@
             // 
             // columnHeader16
             // 
-            this.columnHeader16.Text = "Food Name";
+            this.columnHeader16.Text = "Yemek İsmi";
             this.columnHeader16.Width = 129;
             // 
             // columnHeader17
             // 
-            this.columnHeader17.Text = "Food Category";
+            this.columnHeader17.Text = "Yemek Kategorisi";
             this.columnHeader17.Width = 166;
             // 
             // columnHeader18
             // 
-            this.columnHeader18.Text = "Food Calorie";
+            this.columnHeader18.Text = "Kalori";
             this.columnHeader18.Width = 155;
             // 
             // contextMenuStrip3
@@ -439,7 +449,7 @@
             // 
             // columnHeader14
             // 
-            this.columnHeader14.Text = "CategoryName";
+            this.columnHeader14.Text = "Kategori İsmi";
             this.columnHeader14.Width = 150;
             // 
             // contextMenuStrip2
@@ -471,9 +481,9 @@
             this.labelFilter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelFilter.Location = new System.Drawing.Point(55, 337);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(164, 23);
+            this.labelFilter.Size = new System.Drawing.Size(133, 23);
             this.labelFilter.TabIndex = 29;
-            this.labelFilter.Text = "Membership Filter:";
+            this.labelFilter.Text = "Üyelik Durumu:";
             // 
             // rbUserActives
             // 
@@ -482,9 +492,9 @@
             this.rbUserActives.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbUserActives.Location = new System.Drawing.Point(246, 335);
             this.rbUserActives.Name = "rbUserActives";
-            this.rbUserActives.Size = new System.Drawing.Size(86, 27);
+            this.rbUserActives.Size = new System.Drawing.Size(88, 27);
             this.rbUserActives.TabIndex = 34;
-            this.rbUserActives.Text = "Actives";
+            this.rbUserActives.Text = "Aktifler";
             this.rbUserActives.UseVisualStyleBackColor = true;
             this.rbUserActives.CheckedChanged += new System.EventHandler(this.rbUserActives_CheckedChanged);
             // 
@@ -495,9 +505,9 @@
             this.rbUserPassives.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbUserPassives.Location = new System.Drawing.Point(343, 336);
             this.rbUserPassives.Name = "rbUserPassives";
-            this.rbUserPassives.Size = new System.Drawing.Size(95, 27);
+            this.rbUserPassives.Size = new System.Drawing.Size(88, 27);
             this.rbUserPassives.TabIndex = 35;
-            this.rbUserPassives.Text = "Passives";
+            this.rbUserPassives.Text = "Pasifler";
             this.rbUserPassives.UseVisualStyleBackColor = true;
             this.rbUserPassives.CheckedChanged += new System.EventHandler(this.rbUserPassives_CheckedChanged);
             // 
@@ -509,10 +519,10 @@
             this.rbUserGetAll.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.rbUserGetAll.Location = new System.Drawing.Point(442, 336);
             this.rbUserGetAll.Name = "rbUserGetAll";
-            this.rbUserGetAll.Size = new System.Drawing.Size(142, 27);
+            this.rbUserGetAll.Size = new System.Drawing.Size(214, 27);
             this.rbUserGetAll.TabIndex = 36;
             this.rbUserGetAll.TabStop = true;
-            this.rbUserGetAll.Text = "Get All Clients";
+            this.rbUserGetAll.Text = "Tüm Müşterileri Göster";
             this.rbUserGetAll.UseVisualStyleBackColor = true;
             this.rbUserGetAll.CheckedChanged += new System.EventHandler(this.rbUserGetAll_CheckedChanged);
             // 
@@ -524,18 +534,8 @@
             this.labelTip1.Name = "labelTip1";
             this.labelTip1.Size = new System.Drawing.Size(428, 58);
             this.labelTip1.TabIndex = 37;
-            this.labelTip1.Text = "Tip : You can right click to manage active and passive transactions in all tables" +
-    "";
-            // 
-            // labelTip2
-            // 
-            this.labelTip2.AutoSize = true;
-            this.labelTip2.Location = new System.Drawing.Point(17, 323);
-            this.labelTip2.Name = "labelTip2";
-            this.labelTip2.Size = new System.Drawing.Size(696, 23);
-            this.labelTip2.TabIndex = 42;
-            this.labelTip2.Text = "Tip : For update operations, you can choose from the tables and click the update " +
-    "button";
+            this.labelTip1.Text = "İpucu : Tüm tablolarda aktif ve pasif işlemleri yönetmek için sağ tıklayabilirsin" +
+    "iz.";
             // 
             // AdminForm
             // 

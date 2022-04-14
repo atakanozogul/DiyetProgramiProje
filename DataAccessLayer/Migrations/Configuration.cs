@@ -33,8 +33,8 @@
 
             Dietician dietician1 = new Dietician()
             {
-                FirstName = "dietician1",
-                LastName = "dietician1",
+                FirstName = "diyetisyen1",
+                LastName = "diyetisyen1",
                 Graduation = "A university",
                 Status = StatusEnum.Active,
                 Picture = arr1
@@ -66,8 +66,8 @@
 
             Dietician dietician2 = new Dietician()
             {
-                FirstName = "dietician2",
-                LastName = "dietician2",
+                FirstName = "diyetisyen2",
+                LastName = "diyetisyen2",
                 Graduation = "B university",
                 Status = StatusEnum.Active,
                 Picture = arrD
@@ -93,7 +93,7 @@
             {
                 FirstName = "admin",
                 LastName = "admin",
-                BirthDate = DateTime.Now,
+                BirthDate = DateTime.Parse("01-01-1970"),
                 Gender = GenderEnum.Male,
                 Height = 1,
                 Weight = 1,
@@ -119,9 +119,9 @@
 
             UserInformation user1Info = new UserInformation()
             {
-                FirstName = "user1",
-                LastName = "user1",
-                BirthDate = DateTime.Now,
+                FirstName = "kullanıcı1",
+                LastName = "kullanıcı1",
+                BirthDate = DateTime.Parse("01-01-1999"),
                 Gender = GenderEnum.Male,
                 Height = 178,
                 Weight = 72,
@@ -146,9 +146,9 @@
 
             UserInformation user2Info = new UserInformation()
             {
-                FirstName = "user2",
-                LastName = "user2",
-                BirthDate = DateTime.Now,
+                FirstName = "kullanıcı2",
+                LastName = "kullanıcı2",
+                BirthDate = DateTime.Parse("01-01-2001"),
                 Gender = GenderEnum.Female,
                 Height = 165,
                 Weight = 53,
@@ -174,7 +174,7 @@
 
             FoodCategory category1 = new FoodCategory()
             {
-                CategoryName = "Meats",
+                CategoryName = "Et",
                 Status = StatusEnum.Active
             };
 
@@ -184,11 +184,38 @@
 
             FoodCategory category2 = new FoodCategory()
             {
-                CategoryName = "Vegetables",
+                CategoryName = "Sebzeler",
                 Status = StatusEnum.Active
             };
 
             context.FoodCategories.Add(category2);
+            context.SaveChanges();
+
+            FoodCategory category3 = new FoodCategory()
+            {
+                CategoryName = "Meyveler",
+                Status = StatusEnum.Active
+            };
+
+            context.FoodCategories.Add(category3);
+            context.SaveChanges();
+
+            FoodCategory category4 = new FoodCategory()
+            {
+                CategoryName = "Süt Ürünleri",
+                Status = StatusEnum.Active
+            };
+
+            context.FoodCategories.Add(category4);
+            context.SaveChanges();
+
+            FoodCategory category5 = new FoodCategory()
+            {
+                CategoryName = "Yağ ve Şekerler",
+                Status = StatusEnum.Active
+            };
+
+            context.FoodCategories.Add(category5);
             context.SaveChanges();
 
             string beef = Path.GetFullPath("beef.jpeg");
@@ -202,7 +229,7 @@
 
             FoodName food1 = new FoodName()
             {
-                Name = "Beef",
+                Name = "Biftek",
                 Calorie = 300,
                 Status = StatusEnum.Active,
                 FoodPicture = arr2,
@@ -223,7 +250,7 @@
 
             FoodName food2 = new FoodName()
             {
-                Name = "Chicken",
+                Name = "Tavuk",
                 Calorie = 220,
                 Status = StatusEnum.Active,
                 FoodPicture = arr3,
@@ -244,7 +271,7 @@
 
             FoodName food3 = new FoodName()
             {
-                Name = "Bean",
+                Name = "Fasulye",
                 Calorie = 50,
                 Status = StatusEnum.Active,
                 FoodPicture = arr4,
@@ -265,8 +292,8 @@
 
             FoodName food4 = new FoodName()
             {
-                Name = "Broccoli",
-                Calorie = 27,
+                Name = "Brokoli",
+                Calorie = 32,
                 Status = StatusEnum.Active,
                 FoodPicture = arr5,
                 FoodCategoryId = 2
@@ -286,8 +313,8 @@
 
             FoodName food5 = new FoodName()
             {
-                Name = "Lettuce",
-                Calorie = 27,
+                Name = "Marul",
+                Calorie = 15,
                 Status = StatusEnum.Active,
                 FoodPicture = arr6,
                 FoodCategoryId = 2
@@ -307,15 +334,266 @@
 
             FoodName food6 = new FoodName()
             {
-                Name = "Ham",
-                Calorie = 27,
+                Name = "Jambon",
+                Calorie = 240,
                 Status = StatusEnum.Active,
                 FoodPicture = arr7,
                 FoodCategoryId = 1
             };
 
             context.FoodNames.Add(food6);
+            context.SaveChanges();
 
+            string carrot = Path.GetFullPath("carrot.jpeg");
+            Image food7Img = new Bitmap(carrot);
+            byte[] arr8;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food7Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr8 = ms.ToArray();
+            }
+
+            FoodName food7 = new FoodName()
+            {
+                Name = "Havuç",
+                Calorie = 25,
+                Status = StatusEnum.Active,
+                FoodPicture = arr8,
+                FoodCategoryId = 2
+            };
+
+            context.FoodNames.Add(food7);
+            context.SaveChanges();
+
+            string cheese = Path.GetFullPath("cheese.jpeg");
+            Image food8Img = new Bitmap(cheese);
+            byte[] arr9;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food8Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr9 = ms.ToArray();
+            }
+
+            FoodName food8 = new FoodName()
+            {
+                Name = "Peynir",
+                Calorie = 110,
+                Status = StatusEnum.Active,
+                FoodPicture = arr9,
+                FoodCategoryId = 4
+            };
+
+            context.FoodNames.Add(food8);
+            context.SaveChanges();
+
+            string milk = Path.GetFullPath("milk.jpeg");
+            Image food9Img = new Bitmap(milk);
+            byte[] arr10;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food9Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr10 = ms.ToArray();
+            }
+
+            FoodName food9 = new FoodName()
+            {
+                Name = "Süt",
+                Calorie = 125,
+                Status = StatusEnum.Active,
+                FoodPicture = arr10,
+                FoodCategoryId = 4
+            };
+
+            context.FoodNames.Add(food9);
+            context.SaveChanges();
+
+            string yoghurt = Path.GetFullPath("yoghurt.jpeg");
+            Image food10Img = new Bitmap(yoghurt);
+            byte[] arr11;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food10Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr11 = ms.ToArray();
+            }
+
+            FoodName food10 = new FoodName()
+            {
+                Name = "Yoğurt",
+                Calorie = 90,
+                Status = StatusEnum.Active,
+                FoodPicture = arr11,
+                FoodCategoryId = 4
+            };
+
+            context.FoodNames.Add(food10);
+            context.SaveChanges();
+
+            string chocolate = Path.GetFullPath("chocolate.jpeg");
+            Image food11Img = new Bitmap(chocolate);
+            byte[] arr12;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food11Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr12 = ms.ToArray();
+            }
+
+            FoodName food11 = new FoodName()
+            {
+                Name = "Çikolota",
+                Calorie = 200,
+                Status = StatusEnum.Active,
+                FoodPicture = arr12,
+                FoodCategoryId = 5
+            };
+
+            context.FoodNames.Add(food11);
+            context.SaveChanges();
+
+            string jam = Path.GetFullPath("jam.jpeg");
+            Image food12Img = new Bitmap(jam);
+            byte[] arr13;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food12Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr13 = ms.ToArray();
+            }
+
+            FoodName food12 = new FoodName()
+            {
+                Name = "Reçel",
+                Calorie = 38,
+                Status = StatusEnum.Active,
+                FoodPicture = arr13,
+                FoodCategoryId = 5
+            };
+
+            context.FoodNames.Add(food12);
+            context.SaveChanges();
+
+            string grapes = Path.GetFullPath("grapes.jpeg");
+            Image food13Img = new Bitmap(grapes);
+            byte[] arr14;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food13Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr14 = ms.ToArray();
+            }
+
+            FoodName food13 = new FoodName()
+            {
+                Name = "Üzüm",
+                Calorie = 55,
+                Status = StatusEnum.Active,
+                FoodPicture = arr14,
+                FoodCategoryId = 3
+            };
+
+            context.FoodNames.Add(food13);
+            context.SaveChanges();
+
+            string olive = Path.GetFullPath("olive.jpeg");
+            Image food14Img = new Bitmap(olive);
+            byte[] arr15;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food14Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr15 = ms.ToArray();
+            }
+
+            FoodName food14 = new FoodName()
+            {
+                Name = "Zeytin",
+                Calorie = 50,
+                Status = StatusEnum.Active,
+                FoodPicture = arr15,
+                FoodCategoryId = 3
+            };
+
+            context.FoodNames.Add(food14);
+            context.SaveChanges();
+
+            string tomato = Path.GetFullPath("tomato.jpeg");
+            Image food15Img = new Bitmap(tomato);
+            byte[] arr16;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food15Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr16 = ms.ToArray();
+            }
+
+            FoodName food15 = new FoodName()
+            {
+                Name = "Domates",
+                Calorie = 30,
+                Status = StatusEnum.Active,
+                FoodPicture = arr16,
+                FoodCategoryId = 3
+            };
+
+            context.FoodNames.Add(food15);
+            context.SaveChanges();
+
+            string spinach = Path.GetFullPath("spinach.jpeg");
+            Image food16Img = new Bitmap(spinach);
+            byte[] arr17;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food16Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr17 = ms.ToArray();
+            }
+
+            FoodName food16 = new FoodName()
+            {
+                Name = "Ispanak",
+                Calorie = 8,
+                Status = StatusEnum.Active,
+                FoodPicture = arr17,
+                FoodCategoryId = 2
+            };
+
+            context.FoodNames.Add(food16);
+            context.SaveChanges();
+
+            string cabbage = Path.GetFullPath("cabbage.jpeg");
+            Image food17Img = new Bitmap(cabbage);
+            byte[] arr18;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food17Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr18 = ms.ToArray();
+            }
+
+            FoodName food17 = new FoodName()
+            {
+                Name = "Lahana",
+                Calorie = 15,
+                Status = StatusEnum.Active,
+                FoodPicture = arr18,
+                FoodCategoryId = 2
+            };
+
+            context.FoodNames.Add(food17);
+            context.SaveChanges();
+
+            string cauliflower = Path.GetFullPath("cauliflower.jpeg");
+            Image food18Img = new Bitmap(cauliflower);
+            byte[] arr19;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                food18Img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                arr19 = ms.ToArray();
+            }
+
+            FoodName food18 = new FoodName()
+            {
+                Name = "Karnabahar",
+                Calorie = 20,
+                Status = StatusEnum.Active,
+                FoodPicture = arr18,
+                FoodCategoryId = 2
+            };
+
+            context.FoodNames.Add(food18);
             context.SaveChanges();
         }
     }

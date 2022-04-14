@@ -83,7 +83,7 @@ namespace DiyetProgramiProje
             this.btnBegin1.Name = "btnBegin1";
             this.btnBegin1.Size = new System.Drawing.Size(160, 50);
             this.btnBegin1.TabIndex = 2;
-            this.btnBegin1.Text = "LET\'S START!";
+            this.btnBegin1.Text = "HADİ BAŞLA !";
             this.btnBegin1.UseVisualStyleBackColor = true;
             this.btnBegin1.Click += new System.EventHandler(this.btnBegin1_Click);
             // 
@@ -127,7 +127,7 @@ namespace DiyetProgramiProje
             this.btnSıgnIn2.Name = "btnSıgnIn2";
             this.btnSıgnIn2.Size = new System.Drawing.Size(120, 50);
             this.btnSıgnIn2.TabIndex = 20;
-            this.btnSıgnIn2.Text = "SIGN UP";
+            this.btnSıgnIn2.Text = "KAYIT OL";
             this.btnSıgnIn2.UseVisualStyleBackColor = true;
             this.btnSıgnIn2.Click += new System.EventHandler(this.btnSıgnIn2_Click);
             // 
@@ -144,7 +144,7 @@ namespace DiyetProgramiProje
             this.btnLogIn2.Name = "btnLogIn2";
             this.btnLogIn2.Size = new System.Drawing.Size(120, 50);
             this.btnLogIn2.TabIndex = 19;
-            this.btnLogIn2.Text = "LOG IN";
+            this.btnLogIn2.Text = "GİRİŞ";
             this.btnLogIn2.UseVisualStyleBackColor = true;
             this.btnLogIn2.Click += new System.EventHandler(this.btnLogIn2_Click);
             // 
@@ -156,9 +156,9 @@ namespace DiyetProgramiProje
             this.labelMail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelMail.Location = new System.Drawing.Point(45, 39);
             this.labelMail.Name = "labelMail";
-            this.labelMail.Size = new System.Drawing.Size(59, 26);
+            this.labelMail.Size = new System.Drawing.Size(84, 26);
             this.labelMail.TabIndex = 12;
-            this.labelMail.Text = "Email";
+            this.labelMail.Text = "E-POSTA";
             // 
             // txtEmail
             // 
@@ -187,9 +187,9 @@ namespace DiyetProgramiProje
             this.labelPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelPassword.Location = new System.Drawing.Point(45, 114);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(94, 26);
+            this.labelPassword.Size = new System.Drawing.Size(60, 26);
             this.labelPassword.TabIndex = 13;
-            this.labelPassword.Text = "Password";
+            this.labelPassword.Text = "ŞİFRE";
             // 
             // Form1
             // 

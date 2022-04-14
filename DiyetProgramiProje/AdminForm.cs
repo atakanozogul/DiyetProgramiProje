@@ -42,7 +42,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choose");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
             this.BackColor = ColorTranslator.FromHtml("#cad2c5");
             this.labelFilter.BackColor = ColorTranslator.FromHtml("#293241");
@@ -68,11 +68,11 @@ namespace DiyetProgramiProje
             if (user.Status == StatusEnum.Passive)
             {
                 userService.Active(user);
-                MessageBox.Show("User status updated to ACTIVE");
+                MessageBox.Show("Kullanıcı statüsü aktif olarak değiştirildi.");
             }
             else
             {
-                MessageBox.Show("User status is ACTIVE");
+                MessageBox.Show("Kullanıcı statüsü zaten aktif.");
             }
 
             FillClients();
@@ -85,11 +85,11 @@ namespace DiyetProgramiProje
             if (user.Status == StatusEnum.Active)
             {
                 userService.Passive(user);
-                MessageBox.Show("User status updated to PASSIVE");
+                MessageBox.Show("Kullanıcı statüsü pasif olarak değiştirildi.");
             }
             else
             {
-                MessageBox.Show("User status is PASSIVE");
+                MessageBox.Show("Kullanıcı statüsü zaten pasif.");
             }
 
             FillClients();
@@ -154,7 +154,7 @@ namespace DiyetProgramiProje
 
             switch (categoryType)
             {
-                case "Actives":
+                case "Aktifler":
                     List<FoodCategory> activeCategories = categoryService.GetActives();
                     foreach (var item in activeCategories)
                     {
@@ -166,7 +166,7 @@ namespace DiyetProgramiProje
                     }
                     break;
 
-                case "Passives":
+                case "Pasifler":
                     List<FoodCategory> passiveCategories = categoryService.GetPassives();
                     foreach (var item in passiveCategories)
                     {
@@ -178,12 +178,12 @@ namespace DiyetProgramiProje
                     }
                     break;
 
-                case "Get All Categories":
+                case "Tüm Kategoriler":
                     FillAllCategories();
                     break;
 
                 default:
-                    throw new Exception("Please choose a filter");
+                    throw new Exception("Lütfen bir filtre seçin.");
             }
         }
 
@@ -193,7 +193,7 @@ namespace DiyetProgramiProje
 
             switch (statusType)
             {
-                case "Actives":
+                case "Aktifler":
                     List<FoodName> activeFoods = foodService.GetActives();
                     foreach (var item in activeFoods)
                     {
@@ -209,7 +209,7 @@ namespace DiyetProgramiProje
                     }
                     break;
 
-                case "Passives":
+                case "Pasifler":
                     List<FoodName> passiveFoods = foodService.GetPassives();
                     foreach (var item in passiveFoods)
                     {
@@ -225,12 +225,12 @@ namespace DiyetProgramiProje
                     }
                     break;
 
-                case "Get All Categories":
+                case "Tüm Yemekler":
                     FillAllFoods();
                     break;
 
                 default:
-                    throw new Exception("Please choose a filter");
+                    throw new Exception("Lütfen bir filtre seçin.");
             }
         }
 
@@ -259,7 +259,7 @@ namespace DiyetProgramiProje
 
             switch (statusType)
             {
-                case "Actives":
+                case "Aktifler":
                     List<UserInformation> activeUsers = userService.GetAllActives();
                     foreach (var item in activeUsers)
                     {
@@ -278,7 +278,7 @@ namespace DiyetProgramiProje
                     }
                     break;
 
-                case "Passives":
+                case "Pasifler":
                     List<UserInformation> passiveUsers = userService.GetAllPassives();
                     foreach (var item in passiveUsers)
                     {
@@ -297,12 +297,12 @@ namespace DiyetProgramiProje
                     }
                     break;
 
-                case "Get All Clients":
+                case "Tüm Müşterileri Göster":
                     FillClients();
                     break;
 
                 default:
-                    throw new Exception("Please choose a filter");
+                    throw new Exception("Lütfen bir filtre seçin.");
             }
         }
 
@@ -334,7 +334,7 @@ namespace DiyetProgramiProje
         {
             if (foodForUpdate == null && foodCategory == null)
             {
-                MessageBox.Show("Please select an item.");
+                MessageBox.Show("Lütfen bir kategori yada yemek seçin.");
             }
             else
             {
@@ -373,7 +373,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choose");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -385,7 +385,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choose");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -397,7 +397,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choose");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -410,7 +410,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choose");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -423,7 +423,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choose");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -436,7 +436,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choose");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -448,7 +448,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choice");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -460,7 +460,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choice");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -472,7 +472,7 @@ namespace DiyetProgramiProje
             }
             catch (Exception)
             {
-                MessageBox.Show("Please check your choice");
+                MessageBox.Show("Lütfen seçimini kontrol et.");
             }
         }
 
@@ -480,7 +480,7 @@ namespace DiyetProgramiProje
         {
             if (lvCategory.FocusedItem == null)
             {
-                MessageBox.Show("Please select an item.");
+                MessageBox.Show("Lütfen bir kategori seçin.");
             }
             else
             {
@@ -489,11 +489,11 @@ namespace DiyetProgramiProje
                 if (category.Status == StatusEnum.Passive)
                 {
                     categoryService.Active(category);
-                    MessageBox.Show("Category status updated to ACTIVE");
+                    MessageBox.Show("Kategori statüsü aktif olarak değiştirildi.");
                 }
                 else
                 {
-                    MessageBox.Show("Category status is ACTIVE");
+                    MessageBox.Show("Kategori zaten aktif.");
                 }
             }
         }
@@ -502,7 +502,7 @@ namespace DiyetProgramiProje
         {
             if (lvCategory.FocusedItem == null)
             {
-                MessageBox.Show("Please select an item.");
+                MessageBox.Show("Lütfen bir kategori seçin.");
             }
             else
             {
@@ -511,11 +511,11 @@ namespace DiyetProgramiProje
                 if (category.Status == StatusEnum.Active)
                 {
                     categoryService.Passive(category);
-                    MessageBox.Show("Category status updated to PASSIVE");
+                    MessageBox.Show("Kategori statüsü pasif olarak değiştirildi.");
                 }
                 else
                 {
-                    MessageBox.Show("Category status is PASSIVE");
+                    MessageBox.Show("Kategori zaten pasif.");
                 }
             }
         }
@@ -524,7 +524,7 @@ namespace DiyetProgramiProje
         {
             if (lvFood.FocusedItem == null)
             {
-                MessageBox.Show("Please select an item.");
+                MessageBox.Show("Lütfen bir yemek seçin.");
             }
             else
             {
@@ -533,11 +533,11 @@ namespace DiyetProgramiProje
                 if (food.Status == StatusEnum.Passive)
                 {
                     foodService.Active(food);
-                    MessageBox.Show("Food status updated to ACTIVE");
+                    MessageBox.Show("Kategori statüsü aktif olarak değiştirildi.");
                 }
                 else
                 {
-                    MessageBox.Show("Food status is ACTIVE");
+                    MessageBox.Show("Yemek zaten aktif.");
                 }
             }
         }
@@ -546,7 +546,7 @@ namespace DiyetProgramiProje
         {
             if (lvFood.FocusedItem == null)
             {
-                MessageBox.Show("Please select an item.");
+                MessageBox.Show("Lütfen bir yemek seçin.");
             }
             else
             {
@@ -555,11 +555,11 @@ namespace DiyetProgramiProje
                 if (food.Status == StatusEnum.Active)
                 {
                     foodService.Passive(food);
-                    MessageBox.Show("Food status updated to PASSIVE");
+                    MessageBox.Show("Yemek statüsü pasif olarak değiştirildi.");
                 }
                 else
                 {
-                    MessageBox.Show("Food status is PASSIVE");
+                    MessageBox.Show("Yemek zaten pasif.");
                 }
             }
         }

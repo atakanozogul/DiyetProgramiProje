@@ -95,16 +95,16 @@
             this.grpBoxCatReport.Size = new System.Drawing.Size(1139, 333);
             this.grpBoxCatReport.TabIndex = 0;
             this.grpBoxCatReport.TabStop = false;
-            this.grpBoxCatReport.Text = "Category Report";
+            this.grpBoxCatReport.Text = "Kategori Raporu";
             this.grpBoxCatReport.Paint += new System.Windows.Forms.PaintEventHandler(this.grpBoxCatReport_Paint);
             // 
             // labelReport2
             // 
             this.labelReport2.Location = new System.Drawing.Point(530, 235);
             this.labelReport2.Name = "labelReport2";
-            this.labelReport2.Size = new System.Drawing.Size(140, 77);
+            this.labelReport2.Size = new System.Drawing.Size(140, 95);
             this.labelReport2.TabIndex = 40;
-            this.labelReport2.Text = "You can see the category of your meals here";
+            this.labelReport2.Text = "Yemeklerinizin kategorisini buradan görebilirsiniz.";
             // 
             // labelReport1
             // 
@@ -112,7 +112,7 @@
             this.labelReport1.Name = "labelReport1";
             this.labelReport1.Size = new System.Drawing.Size(168, 48);
             this.labelReport1.TabIndex = 39;
-            this.labelReport1.Text = "Enter your meals between two dates";
+            this.labelReport1.Text = "İki tarih arasındaki öğünlerinizi girin";
             // 
             // pBox2
             // 
@@ -144,9 +144,9 @@
             this.btnCategoriesShow.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCategoriesShow.Location = new System.Drawing.Point(348, 167);
             this.btnCategoriesShow.Name = "btnCategoriesShow";
-            this.btnCategoriesShow.Size = new System.Drawing.Size(160, 50);
+            this.btnCategoriesShow.Size = new System.Drawing.Size(160, 65);
             this.btnCategoriesShow.TabIndex = 8;
-            this.btnCategoriesShow.Text = "Show Categories";
+            this.btnCategoriesShow.Text = "Kategorileri Göster";
             this.btnCategoriesShow.UseVisualStyleBackColor = true;
             this.btnCategoriesShow.Click += new System.EventHandler(this.btnCategoriesShow_Click);
             // 
@@ -165,9 +165,9 @@
             this.labelMealTime1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelMealTime1.Location = new System.Drawing.Point(32, 136);
             this.labelMealTime1.Name = "labelMealTime1";
-            this.labelMealTime1.Size = new System.Drawing.Size(99, 23);
+            this.labelMealTime1.Size = new System.Drawing.Size(118, 23);
             this.labelMealTime1.TabIndex = 5;
-            this.labelMealTime1.Text = "Meal Time:";
+            this.labelMealTime1.Text = "Öğün Zamanı:";
             // 
             // dgvCategory
             // 
@@ -185,14 +185,14 @@
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "CategoryName";
+            this.Column1.HeaderText = "Kategori İsmi";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Width = 200;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Quantity";
+            this.Column2.HeaderText = "Miktar";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 150;
@@ -217,9 +217,9 @@
             this.labelEndDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelEndDate.Location = new System.Drawing.Point(343, 55);
             this.labelEndDate.Name = "labelEndDate";
-            this.labelEndDate.Size = new System.Drawing.Size(86, 23);
+            this.labelEndDate.Size = new System.Drawing.Size(98, 23);
             this.labelEndDate.TabIndex = 1;
-            this.labelEndDate.Text = "End Date:";
+            this.labelEndDate.Text = "Bitiş Tarihi:";
             // 
             // labelStartedDate
             // 
@@ -227,9 +227,9 @@
             this.labelStartedDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelStartedDate.Location = new System.Drawing.Point(32, 55);
             this.labelStartedDate.Name = "labelStartedDate";
-            this.labelStartedDate.Size = new System.Drawing.Size(116, 23);
+            this.labelStartedDate.Size = new System.Drawing.Size(137, 23);
             this.labelStartedDate.TabIndex = 0;
-            this.labelStartedDate.Text = "Started Date:";
+            this.labelStartedDate.Text = "Başlangıç Tarihi:";
             // 
             // labelMealTime2
             // 
@@ -237,9 +237,9 @@
             this.labelMealTime2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelMealTime2.Location = new System.Drawing.Point(6, 34);
             this.labelMealTime2.Name = "labelMealTime2";
-            this.labelMealTime2.Size = new System.Drawing.Size(99, 23);
+            this.labelMealTime2.Size = new System.Drawing.Size(118, 23);
             this.labelMealTime2.TabIndex = 7;
-            this.labelMealTime2.Text = "Meal Time:";
+            this.labelMealTime2.Text = "Öğün Zamanı:";
             // 
             // cboxFoodMealTime
             // 
@@ -265,7 +265,7 @@
             this.grpBoxFoodReport.Size = new System.Drawing.Size(616, 348);
             this.grpBoxFoodReport.TabIndex = 1;
             this.grpBoxFoodReport.TabStop = false;
-            this.grpBoxFoodReport.Text = "Food Report";
+            this.grpBoxFoodReport.Text = "Yemek Raporu";
             this.grpBoxFoodReport.Paint += new System.Windows.Forms.PaintEventHandler(this.grpBoxFoodReport_Paint);
             // 
             // labelReport3
@@ -274,7 +274,7 @@
             this.labelReport3.Name = "labelReport3";
             this.labelReport3.Size = new System.Drawing.Size(143, 102);
             this.labelReport3.TabIndex = 35;
-            this.labelReport3.Text = "You can see what you eat by choosing your meal time";
+            this.labelReport3.Text = "Yemek saatinizi seçerek ne yediğinizi görebilirsiniz.";
             // 
             // pBox3
             // 
@@ -303,14 +303,14 @@
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Food";
+            this.Column5.HeaderText = "Yemek";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.Width = 200;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Quantity";
+            this.Column4.HeaderText = "Miktar";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             // 
@@ -327,7 +327,7 @@
             this.grpBoxMostEatenFoods.Size = new System.Drawing.Size(517, 348);
             this.grpBoxMostEatenFoods.TabIndex = 9;
             this.grpBoxMostEatenFoods.TabStop = false;
-            this.grpBoxMostEatenFoods.Text = "Most Eaten Foods";
+            this.grpBoxMostEatenFoods.Text = "En Çok Tüketilen Yemekler";
             this.grpBoxMostEatenFoods.Paint += new System.Windows.Forms.PaintEventHandler(this.grpBoxMostEatenFoods_Paint);
             // 
             // labelReport4
@@ -336,7 +336,7 @@
             this.labelReport4.Name = "labelReport4";
             this.labelReport4.Size = new System.Drawing.Size(104, 129);
             this.labelReport4.TabIndex = 39;
-            this.labelReport4.Text = "You can see the most eaten foods here";
+            this.labelReport4.Text = "En çok yenen yiyecekleri burada görebilirsiniz";
             // 
             // pBox4
             // 
@@ -364,14 +364,14 @@
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Food";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Yemek";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Quantity";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Miktar";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
@@ -382,9 +382,9 @@
             this.labelTips.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelTips.Location = new System.Drawing.Point(30, 9);
             this.labelTips.Name = "labelTips";
-            this.labelTips.Size = new System.Drawing.Size(212, 23);
+            this.labelTips.Size = new System.Drawing.Size(300, 23);
             this.labelTips.TabIndex = 31;
-            this.labelTips.Text = "You can change tips here :";
+            this.labelTips.Text = "İpuçlarını buradan değiştirebilirsiniz:";
             // 
             // radioButtonClose
             // 
@@ -392,12 +392,12 @@
             this.radioButtonClose.Checked = true;
             this.radioButtonClose.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonClose.Location = new System.Drawing.Point(353, 7);
+            this.radioButtonClose.Location = new System.Drawing.Point(441, 7);
             this.radioButtonClose.Name = "radioButtonClose";
-            this.radioButtonClose.Size = new System.Drawing.Size(117, 27);
+            this.radioButtonClose.Size = new System.Drawing.Size(123, 27);
             this.radioButtonClose.TabIndex = 30;
             this.radioButtonClose.TabStop = true;
-            this.radioButtonClose.Text = "Tips Closed";
+            this.radioButtonClose.Text = "İpucu Kapalı";
             this.radioButtonClose.UseVisualStyleBackColor = true;
             // 
             // radioButtonOpen
@@ -405,11 +405,11 @@
             this.radioButtonOpen.AutoSize = true;
             this.radioButtonOpen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonOpen.Location = new System.Drawing.Point(248, 7);
+            this.radioButtonOpen.Location = new System.Drawing.Point(336, 7);
             this.radioButtonOpen.Name = "radioButtonOpen";
-            this.radioButtonOpen.Size = new System.Drawing.Size(107, 27);
+            this.radioButtonOpen.Size = new System.Drawing.Size(109, 27);
             this.radioButtonOpen.TabIndex = 29;
-            this.radioButtonOpen.Text = "Tips Open";
+            this.radioButtonOpen.Text = "İpucu Açık";
             this.radioButtonOpen.UseVisualStyleBackColor = true;
             this.radioButtonOpen.CheckedChanged += new System.EventHandler(this.radioButtonOpen_CheckedChanged);
             // 
@@ -430,7 +430,6 @@
             this.Name = "ReportForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReportForm";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ReportForm_FormClosed);
             this.Load += new System.EventHandler(this.ReportForm_Load);
             this.grpBoxCatReport.ResumeLayout(false);
             this.grpBoxCatReport.PerformLayout();
@@ -469,12 +468,6 @@
         private System.Windows.Forms.Label labelTips;
         private System.Windows.Forms.RadioButton radioButtonClose;
         private System.Windows.Forms.RadioButton radioButtonOpen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.PictureBox pBox1;
         private System.Windows.Forms.PictureBox pBox3;
         private System.Windows.Forms.PictureBox pBox4;
@@ -483,5 +476,11 @@
         private System.Windows.Forms.PictureBox pBox2;
         private System.Windows.Forms.Label labelReport3;
         private System.Windows.Forms.Label labelReport4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DieticianMessagesForm));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pBox2 = new System.Windows.Forms.PictureBox();
+            this.labelMessage3 = new System.Windows.Forms.Label();
+            this.btnMessageSend = new FontAwesome.Sharp.IconButton();
             this.labelTitle = new System.Windows.Forms.Label();
             this.txtMessageTitle = new System.Windows.Forms.TextBox();
             this.txtMessage = new System.Windows.Forms.RichTextBox();
@@ -47,22 +50,19 @@
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnMessageSend = new FontAwesome.Sharp.IconButton();
             this.labelTips = new System.Windows.Forms.Label();
             this.radioButtonClose = new System.Windows.Forms.RadioButton();
             this.radioButtonOpen = new System.Windows.Forms.RadioButton();
             this.labelMessage1 = new System.Windows.Forms.Label();
             this.labelMessage2 = new System.Windows.Forms.Label();
-            this.labelMessage3 = new System.Windows.Forms.Label();
             this.pBox1 = new System.Windows.Forms.PictureBox();
             this.pBox3 = new System.Windows.Forms.PictureBox();
-            this.pBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).BeginInit();
             this.gboxMessages.SuspendLayout();
             this.grpbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -81,17 +81,50 @@
             this.groupBox2.Size = new System.Drawing.Size(524, 310);
             this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Send Messages";
+            this.groupBox2.Text = "Mesaj Gönder";
             this.groupBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBox2_Paint);
+            // 
+            // pBox2
+            // 
+            this.pBox2.Image = ((System.Drawing.Image)(resources.GetObject("pBox2.Image")));
+            this.pBox2.Location = new System.Drawing.Point(369, 161);
+            this.pBox2.Name = "pBox2";
+            this.pBox2.Size = new System.Drawing.Size(50, 45);
+            this.pBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBox2.TabIndex = 38;
+            this.pBox2.TabStop = false;
+            // 
+            // labelMessage3
+            // 
+            this.labelMessage3.Location = new System.Drawing.Point(365, 72);
+            this.labelMessage3.Name = "labelMessage3";
+            this.labelMessage3.Size = new System.Drawing.Size(149, 86);
+            this.labelMessage3.TabIndex = 20;
+            this.labelMessage3.Text = "Müşterilerinize buradan mesaj gönderebilirsiniz.";
+            // 
+            // btnMessageSend
+            // 
+            this.btnMessageSend.FlatAppearance.BorderSize = 0;
+            this.btnMessageSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMessageSend.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnMessageSend.IconColor = System.Drawing.Color.Black;
+            this.btnMessageSend.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMessageSend.Location = new System.Drawing.Point(354, 248);
+            this.btnMessageSend.Name = "btnMessageSend";
+            this.btnMessageSend.Size = new System.Drawing.Size(160, 50);
+            this.btnMessageSend.TabIndex = 19;
+            this.btnMessageSend.Text = "GÖNDER";
+            this.btnMessageSend.UseVisualStyleBackColor = true;
+            this.btnMessageSend.Click += new System.EventHandler(this.btnMessageSend_Click);
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Location = new System.Drawing.Point(6, 30);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(126, 23);
+            this.labelTitle.Size = new System.Drawing.Size(120, 23);
             this.labelTitle.TabIndex = 8;
-            this.labelTitle.Text = "Message Title:";
+            this.labelTitle.Text = "Mesaj Başlığı:";
             // 
             // txtMessageTitle
             // 
@@ -123,7 +156,7 @@
             this.gboxMessages.Size = new System.Drawing.Size(512, 310);
             this.gboxMessages.TabIndex = 20;
             this.gboxMessages.TabStop = false;
-            this.gboxMessages.Text = "Messages";
+            this.gboxMessages.Text = "Mesajlar";
             this.gboxMessages.Paint += new System.Windows.Forms.PaintEventHandler(this.gboxMessages_Paint);
             // 
             // labelUsers
@@ -132,9 +165,9 @@
             this.labelUsers.BackColor = System.Drawing.Color.Transparent;
             this.labelUsers.Location = new System.Drawing.Point(7, 35);
             this.labelUsers.Name = "labelUsers";
-            this.labelUsers.Size = new System.Drawing.Size(55, 23);
+            this.labelUsers.Size = new System.Drawing.Size(98, 23);
             this.labelUsers.TabIndex = 3;
-            this.labelUsers.Text = "Users";
+            this.labelUsers.Text = "Kullanıcılar";
             // 
             // cboxUsers
             // 
@@ -176,7 +209,7 @@
             this.grpbox.Size = new System.Drawing.Size(872, 351);
             this.grpbox.TabIndex = 19;
             this.grpbox.TabStop = false;
-            this.grpbox.Text = "Clients";
+            this.grpbox.Text = "Müşteriler";
             this.grpbox.Paint += new System.Windows.Forms.PaintEventHandler(this.grpbox_Paint);
             // 
             // lvClients
@@ -207,48 +240,33 @@
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Name";
+            this.columnHeader5.Text = "İsim";
             this.columnHeader5.Width = 141;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Surname";
+            this.columnHeader6.Text = "Soyisim";
             this.columnHeader6.Width = 153;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Height";
+            this.columnHeader7.Text = "Boy";
             this.columnHeader7.Width = 79;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Weight";
+            this.columnHeader8.Text = "Kilo";
             this.columnHeader8.Width = 87;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Birthdate";
+            this.columnHeader9.Text = "Doğum Tarihi";
             this.columnHeader9.Width = 167;
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "User Request";
+            this.columnHeader10.Text = "Kullanıcıİsteği";
             this.columnHeader10.Width = 166;
-            // 
-            // btnMessageSend
-            // 
-            this.btnMessageSend.FlatAppearance.BorderSize = 0;
-            this.btnMessageSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMessageSend.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnMessageSend.IconColor = System.Drawing.Color.Black;
-            this.btnMessageSend.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMessageSend.Location = new System.Drawing.Point(354, 248);
-            this.btnMessageSend.Name = "btnMessageSend";
-            this.btnMessageSend.Size = new System.Drawing.Size(160, 50);
-            this.btnMessageSend.TabIndex = 19;
-            this.btnMessageSend.Text = "SEND";
-            this.btnMessageSend.UseVisualStyleBackColor = true;
-            this.btnMessageSend.Click += new System.EventHandler(this.btnMessageSend_Click);
             // 
             // labelTips
             // 
@@ -257,9 +275,9 @@
             this.labelTips.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelTips.Location = new System.Drawing.Point(12, 24);
             this.labelTips.Name = "labelTips";
-            this.labelTips.Size = new System.Drawing.Size(212, 23);
+            this.labelTips.Size = new System.Drawing.Size(300, 23);
             this.labelTips.TabIndex = 31;
-            this.labelTips.Text = "You can change tips here :";
+            this.labelTips.Text = "İpuçlarını buradan değiştirebilirsiniz:";
             // 
             // radioButtonClose
             // 
@@ -267,12 +285,12 @@
             this.radioButtonClose.Checked = true;
             this.radioButtonClose.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonClose.Location = new System.Drawing.Point(335, 22);
+            this.radioButtonClose.Location = new System.Drawing.Point(421, 22);
             this.radioButtonClose.Name = "radioButtonClose";
-            this.radioButtonClose.Size = new System.Drawing.Size(117, 27);
+            this.radioButtonClose.Size = new System.Drawing.Size(123, 27);
             this.radioButtonClose.TabIndex = 30;
             this.radioButtonClose.TabStop = true;
-            this.radioButtonClose.Text = "Tips Closed";
+            this.radioButtonClose.Text = "İpucu Kapalı";
             this.radioButtonClose.UseVisualStyleBackColor = true;
             // 
             // radioButtonOpen
@@ -280,11 +298,11 @@
             this.radioButtonOpen.AutoSize = true;
             this.radioButtonOpen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.radioButtonOpen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonOpen.Location = new System.Drawing.Point(230, 22);
+            this.radioButtonOpen.Location = new System.Drawing.Point(316, 22);
             this.radioButtonOpen.Name = "radioButtonOpen";
-            this.radioButtonOpen.Size = new System.Drawing.Size(107, 27);
+            this.radioButtonOpen.Size = new System.Drawing.Size(109, 27);
             this.radioButtonOpen.TabIndex = 29;
-            this.radioButtonOpen.Text = "Tips Open";
+            this.radioButtonOpen.Text = "İpucu Açık";
             this.radioButtonOpen.UseVisualStyleBackColor = true;
             this.radioButtonOpen.CheckedChanged += new System.EventHandler(this.radioButtonOpen_CheckedChanged);
             // 
@@ -296,25 +314,17 @@
             this.labelMessage1.Name = "labelMessage1";
             this.labelMessage1.Size = new System.Drawing.Size(132, 68);
             this.labelMessage1.TabIndex = 32;
-            this.labelMessage1.Text = "Your customers appear here";
+            this.labelMessage1.Text = "Müşterileriniz burada görünür";
             // 
             // labelMessage2
             // 
             this.labelMessage2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelMessage2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelMessage2.Location = new System.Drawing.Point(12, 301);
+            this.labelMessage2.Location = new System.Drawing.Point(12, 285);
             this.labelMessage2.Name = "labelMessage2";
-            this.labelMessage2.Size = new System.Drawing.Size(131, 103);
+            this.labelMessage2.Size = new System.Drawing.Size(131, 119);
             this.labelMessage2.TabIndex = 33;
-            this.labelMessage2.Text = "You can read messages from your customers here";
-            // 
-            // labelMessage3
-            // 
-            this.labelMessage3.Location = new System.Drawing.Point(365, 72);
-            this.labelMessage3.Name = "labelMessage3";
-            this.labelMessage3.Size = new System.Drawing.Size(149, 86);
-            this.labelMessage3.TabIndex = 20;
-            this.labelMessage3.Text = "You can send a message to your customers here";
+            this.labelMessage2.Text = "Müşterilerinizden gelen mesajları buradan okuyabilirsiniz";
             // 
             // pBox1
             // 
@@ -335,16 +345,6 @@
             this.pBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBox3.TabIndex = 35;
             this.pBox3.TabStop = false;
-            // 
-            // pBox2
-            // 
-            this.pBox2.Image = ((System.Drawing.Image)(resources.GetObject("pBox2.Image")));
-            this.pBox2.Location = new System.Drawing.Point(369, 161);
-            this.pBox2.Name = "pBox2";
-            this.pBox2.Size = new System.Drawing.Size(50, 45);
-            this.pBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBox2.TabIndex = 38;
-            this.pBox2.TabStop = false;
             // 
             // DieticianMessagesForm
             // 
@@ -371,12 +371,12 @@
             this.Load += new System.EventHandler(this.DieticianMessagesForm_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).EndInit();
             this.gboxMessages.ResumeLayout(false);
             this.gboxMessages.PerformLayout();
             this.grpbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

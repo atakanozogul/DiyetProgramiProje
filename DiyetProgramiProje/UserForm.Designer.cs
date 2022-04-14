@@ -53,7 +53,6 @@ namespace DiyetProgramiProje
             this.labelAddMeal3 = new System.Windows.Forms.Label();
             this.labelAddMeal2 = new System.Windows.Forms.Label();
             this.labelAddMeal1 = new System.Windows.Forms.Label();
-            this.btnNewMeal2 = new FontAwesome.Sharp.IconButton();
             this.btnAddMeal2 = new FontAwesome.Sharp.IconButton();
             this.labelMealTime = new System.Windows.Forms.Label();
             this.cboxMealTime = new System.Windows.Forms.ComboBox();
@@ -106,9 +105,9 @@ namespace DiyetProgramiProje
             this.labelFilter.AutoSize = true;
             this.labelFilter.Location = new System.Drawing.Point(344, 280);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(96, 23);
+            this.labelFilter.Size = new System.Drawing.Size(149, 23);
             this.labelFilter.TabIndex = 2;
-            this.labelFilter.Text = "Food Filter";
+            this.labelFilter.Text = "Yemek Filtreleme";
             // 
             // txtFoodFilter
             // 
@@ -125,7 +124,6 @@ namespace DiyetProgramiProje
             this.lboxFoods.Location = new System.Drawing.Point(348, 53);
             this.lboxFoods.Name = "lboxFoods";
             this.lboxFoods.Size = new System.Drawing.Size(170, 211);
-            this.lboxFoods.Sorted = true;
             this.lboxFoods.TabIndex = 4;
             this.lboxFoods.SelectedIndexChanged += new System.EventHandler(this.lboxFoods_SelectedIndexChanged);
             // 
@@ -134,9 +132,9 @@ namespace DiyetProgramiProje
             this.labelFoods.AutoSize = true;
             this.labelFoods.Location = new System.Drawing.Point(344, 26);
             this.labelFoods.Name = "labelFoods";
-            this.labelFoods.Size = new System.Drawing.Size(57, 23);
+            this.labelFoods.Size = new System.Drawing.Size(84, 23);
             this.labelFoods.TabIndex = 5;
-            this.labelFoods.Text = "Foods";
+            this.labelFoods.Text = "Yemekler";
             // 
             // pboxFood
             // 
@@ -153,9 +151,9 @@ namespace DiyetProgramiProje
             this.labelQuantity.AutoSize = true;
             this.labelQuantity.Location = new System.Drawing.Point(753, 28);
             this.labelQuantity.Name = "labelQuantity";
-            this.labelQuantity.Size = new System.Drawing.Size(141, 23);
+            this.labelQuantity.Size = new System.Drawing.Size(142, 23);
             this.labelQuantity.TabIndex = 7;
-            this.labelQuantity.Text = "Portion Quantity";
+            this.labelQuantity.Text = "Porsiyon Miktarı";
             // 
             // groupBoxPortion
             // 
@@ -166,7 +164,7 @@ namespace DiyetProgramiProje
             this.groupBoxPortion.Size = new System.Drawing.Size(178, 86);
             this.groupBoxPortion.TabIndex = 8;
             this.groupBoxPortion.TabStop = false;
-            this.groupBoxPortion.Text = "Calories by Portion";
+            this.groupBoxPortion.Text = "Porsiyon Kalorisi";
             // 
             // lblCaloriesByPortion
             // 
@@ -186,7 +184,7 @@ namespace DiyetProgramiProje
             this.groupBoxCategory.Size = new System.Drawing.Size(178, 82);
             this.groupBoxCategory.TabIndex = 10;
             this.groupBoxCategory.TabStop = false;
-            this.groupBoxCategory.Text = "Category";
+            this.groupBoxCategory.Text = "Kategori";
             // 
             // lblCategoyName
             // 
@@ -217,9 +215,9 @@ namespace DiyetProgramiProje
             this.labelMealDate.BackColor = System.Drawing.Color.Transparent;
             this.labelMealDate.Location = new System.Drawing.Point(22, 53);
             this.labelMealDate.Name = "labelMealDate";
-            this.labelMealDate.Size = new System.Drawing.Size(93, 23);
+            this.labelMealDate.Size = new System.Drawing.Size(100, 23);
             this.labelMealDate.TabIndex = 16;
-            this.labelMealDate.Text = "Meal Date";
+            this.labelMealDate.Text = "Öğün Tarihi";
             // 
             // dtAddMealDate
             // 
@@ -237,7 +235,7 @@ namespace DiyetProgramiProje
             this.groupBoxTotalCal.Size = new System.Drawing.Size(132, 70);
             this.groupBoxTotalCal.TabIndex = 9;
             this.groupBoxTotalCal.TabStop = false;
-            this.groupBoxTotalCal.Text = "Total Calories";
+            this.groupBoxTotalCal.Text = "Toplam Kalori";
             // 
             // lblTotalCalories
             // 
@@ -258,7 +256,6 @@ namespace DiyetProgramiProje
             this.groupBoxAddMeal.Controls.Add(this.labelAddMeal3);
             this.groupBoxAddMeal.Controls.Add(this.labelAddMeal2);
             this.groupBoxAddMeal.Controls.Add(this.labelAddMeal1);
-            this.groupBoxAddMeal.Controls.Add(this.btnNewMeal2);
             this.groupBoxAddMeal.Controls.Add(this.groupBoxCategory);
             this.groupBoxAddMeal.Controls.Add(this.btnAddMeal2);
             this.groupBoxAddMeal.Controls.Add(this.groupBoxTotalCal);
@@ -281,7 +278,7 @@ namespace DiyetProgramiProje
             this.groupBoxAddMeal.Size = new System.Drawing.Size(1158, 364);
             this.groupBoxAddMeal.TabIndex = 1;
             this.groupBoxAddMeal.TabStop = false;
-            this.groupBoxAddMeal.Text = "Add Meal";
+            this.groupBoxAddMeal.Text = "Yemek Ekle";
             this.groupBoxAddMeal.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxAddMeal_Paint);
             // 
             // pbox2
@@ -307,7 +304,7 @@ namespace DiyetProgramiProje
             // pbox3
             // 
             this.pbox3.Image = ((System.Drawing.Image)(resources.GetObject("pbox3.Image")));
-            this.pbox3.Location = new System.Drawing.Point(957, 112);
+            this.pbox3.Location = new System.Drawing.Point(906, 155);
             this.pbox3.Name = "pbox3";
             this.pbox3.Size = new System.Drawing.Size(50, 45);
             this.pbox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -316,11 +313,11 @@ namespace DiyetProgramiProje
             // 
             // labelAddMeal3
             // 
-            this.labelAddMeal3.Location = new System.Drawing.Point(954, 168);
+            this.labelAddMeal3.Location = new System.Drawing.Point(973, 138);
             this.labelAddMeal3.Name = "labelAddMeal3";
-            this.labelAddMeal3.Size = new System.Drawing.Size(198, 80);
+            this.labelAddMeal3.Size = new System.Drawing.Size(179, 80);
             this.labelAddMeal3.TabIndex = 24;
-            this.labelAddMeal3.Text = "In the last step, you can add your food by entering the portion.";
+            this.labelAddMeal3.Text = "Son adımda porsiyon girerek yemeğinizi ekleyebilirsiniz.\r\n";
             // 
             // labelAddMeal2
             // 
@@ -328,7 +325,7 @@ namespace DiyetProgramiProje
             this.labelAddMeal2.Name = "labelAddMeal2";
             this.labelAddMeal2.Size = new System.Drawing.Size(175, 79);
             this.labelAddMeal2.TabIndex = 22;
-            this.labelAddMeal2.Text = "You can see the information of the food you want here";
+            this.labelAddMeal2.Text = "Burada istediğiniz yemeğin bilgilerini görebilirsiniz.";
             // 
             // labelAddMeal1
             // 
@@ -336,23 +333,7 @@ namespace DiyetProgramiProje
             this.labelAddMeal1.Name = "labelAddMeal1";
             this.labelAddMeal1.Size = new System.Drawing.Size(300, 68);
             this.labelAddMeal1.TabIndex = 20;
-            this.labelAddMeal1.Text = "First of all, you should enter the meal time and meal in this section";
-            // 
-            // btnNewMeal2
-            // 
-            this.btnNewMeal2.FlatAppearance.BorderSize = 0;
-            this.btnNewMeal2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewMeal2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNewMeal2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnNewMeal2.IconColor = System.Drawing.Color.Black;
-            this.btnNewMeal2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNewMeal2.Location = new System.Drawing.Point(757, 175);
-            this.btnNewMeal2.Name = "btnNewMeal2";
-            this.btnNewMeal2.Size = new System.Drawing.Size(160, 60);
-            this.btnNewMeal2.TabIndex = 19;
-            this.btnNewMeal2.Text = "NEW MEAL REQUEST";
-            this.btnNewMeal2.UseVisualStyleBackColor = true;
-            this.btnNewMeal2.Click += new System.EventHandler(this.btnNewMeal2_Click);
+            this.labelAddMeal1.Text = "Öncelikle bu bölüme yemek saatini ve öğünü girmelisiniz.";
             // 
             // btnAddMeal2
             // 
@@ -362,11 +343,11 @@ namespace DiyetProgramiProje
             this.btnAddMeal2.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnAddMeal2.IconColor = System.Drawing.Color.Black;
             this.btnAddMeal2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAddMeal2.Location = new System.Drawing.Point(757, 108);
+            this.btnAddMeal2.Location = new System.Drawing.Point(734, 150);
             this.btnAddMeal2.Name = "btnAddMeal2";
             this.btnAddMeal2.Size = new System.Drawing.Size(160, 50);
             this.btnAddMeal2.TabIndex = 18;
-            this.btnAddMeal2.Text = "ADD MEAL";
+            this.btnAddMeal2.Text = "YEMEK EKLE";
             this.btnAddMeal2.UseVisualStyleBackColor = true;
             this.btnAddMeal2.Click += new System.EventHandler(this.btnAddMeal2_Click);
             // 
@@ -375,9 +356,9 @@ namespace DiyetProgramiProje
             this.labelMealTime.AutoSize = true;
             this.labelMealTime.Location = new System.Drawing.Point(21, 129);
             this.labelMealTime.Name = "labelMealTime";
-            this.labelMealTime.Size = new System.Drawing.Size(94, 23);
+            this.labelMealTime.Size = new System.Drawing.Size(113, 23);
             this.labelMealTime.TabIndex = 1;
-            this.labelMealTime.Text = "Meal Time";
+            this.labelMealTime.Text = "Öğün Zamanı";
             // 
             // cboxMealTime
             // 
@@ -432,7 +413,7 @@ namespace DiyetProgramiProje
             this.groupBoxCheckMeal.Size = new System.Drawing.Size(1158, 343);
             this.groupBoxCheckMeal.TabIndex = 16;
             this.groupBoxCheckMeal.TabStop = false;
-            this.groupBoxCheckMeal.Text = "Check Meals";
+            this.groupBoxCheckMeal.Text = "Öğün Kontrolü";
             this.groupBoxCheckMeal.Paint += new System.Windows.Forms.PaintEventHandler(this.groupBoxCheckMeal_Paint);
             // 
             // pbox4
@@ -448,7 +429,7 @@ namespace DiyetProgramiProje
             // pbox6
             // 
             this.pbox6.Image = ((System.Drawing.Image)(resources.GetObject("pbox6.Image")));
-            this.pbox6.Location = new System.Drawing.Point(1012, 197);
+            this.pbox6.Location = new System.Drawing.Point(1013, 221);
             this.pbox6.Name = "pbox6";
             this.pbox6.Size = new System.Drawing.Size(50, 45);
             this.pbox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -457,11 +438,11 @@ namespace DiyetProgramiProje
             // 
             // labelCheckMeal3
             // 
-            this.labelCheckMeal3.Location = new System.Drawing.Point(841, 220);
+            this.labelCheckMeal3.Location = new System.Drawing.Point(841, 206);
             this.labelCheckMeal3.Name = "labelCheckMeal3";
-            this.labelCheckMeal3.Size = new System.Drawing.Size(166, 71);
+            this.labelCheckMeal3.Size = new System.Drawing.Size(166, 94);
             this.labelCheckMeal3.TabIndex = 34;
-            this.labelCheckMeal3.Text = "You can see all the calorie information from this section";
+            this.labelCheckMeal3.Text = "Tüm kalori bilgilerini bu bölümden görebilirsiniz.";
             // 
             // pbox5
             // 
@@ -479,8 +460,7 @@ namespace DiyetProgramiProje
             this.labelCheckMeal2.Name = "labelCheckMeal2";
             this.labelCheckMeal2.Size = new System.Drawing.Size(253, 94);
             this.labelCheckMeal2.TabIndex = 32;
-            this.labelCheckMeal2.Text = "Here is the list of your meals. You can delete the food you want with a right cli" +
-    "ck.";
+            this.labelCheckMeal2.Text = "İşte yemeklerinizin listesi. Sağ tıklama ile istediğiniz yemeği silebilirsiniz.";
             // 
             // labelCheckMeal1
             // 
@@ -488,14 +468,14 @@ namespace DiyetProgramiProje
             this.labelCheckMeal1.Name = "labelCheckMeal1";
             this.labelCheckMeal1.Size = new System.Drawing.Size(176, 51);
             this.labelCheckMeal1.TabIndex = 30;
-            this.labelCheckMeal1.Text = "You can check your meals here";
+            this.labelCheckMeal1.Text = "Yemeklerinizi buradan kontrol edebilirsiniz.";
             // 
             // lblRemainCalories
             // 
             this.lblRemainCalories.AutoSize = true;
             this.lblRemainCalories.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblRemainCalories.ForeColor = System.Drawing.Color.Red;
-            this.lblRemainCalories.Location = new System.Drawing.Point(980, 147);
+            this.lblRemainCalories.Location = new System.Drawing.Point(1070, 147);
             this.lblRemainCalories.Name = "lblRemainCalories";
             this.lblRemainCalories.Size = new System.Drawing.Size(20, 23);
             this.lblRemainCalories.TabIndex = 0;
@@ -506,9 +486,9 @@ namespace DiyetProgramiProje
             this.labelRemainCalorie.AutoSize = true;
             this.labelRemainCalorie.Location = new System.Drawing.Point(836, 147);
             this.labelRemainCalorie.Name = "labelRemainCalorie";
-            this.labelRemainCalorie.Size = new System.Drawing.Size(139, 23);
+            this.labelRemainCalorie.Size = new System.Drawing.Size(108, 23);
             this.labelRemainCalorie.TabIndex = 29;
-            this.labelRemainCalorie.Text = "Remain Calorie :";
+            this.labelRemainCalorie.Text = "Kalan Kalori:";
             // 
             // lblDailyCalorieRequirement
             // 
@@ -526,16 +506,16 @@ namespace DiyetProgramiProje
             this.labelDailyRequirement.AutoSize = true;
             this.labelDailyRequirement.Location = new System.Drawing.Point(836, 111);
             this.labelDailyRequirement.Name = "labelDailyRequirement";
-            this.labelDailyRequirement.Size = new System.Drawing.Size(228, 23);
+            this.labelDailyRequirement.Size = new System.Drawing.Size(192, 23);
             this.labelDailyRequirement.TabIndex = 28;
-            this.labelDailyRequirement.Text = "Daily Requirement Calorie :";
+            this.labelDailyRequirement.Text = "Günlük Gereken Kalori:\r\n";
             // 
             // lblTotalTakenCalory
             // 
             this.lblTotalTakenCalory.AutoSize = true;
             this.lblTotalTakenCalory.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTotalTakenCalory.ForeColor = System.Drawing.Color.Red;
-            this.lblTotalTakenCalory.Location = new System.Drawing.Point(1008, 74);
+            this.lblTotalTakenCalory.Location = new System.Drawing.Point(1070, 75);
             this.lblTotalTakenCalory.Name = "lblTotalTakenCalory";
             this.lblTotalTakenCalory.Size = new System.Drawing.Size(20, 23);
             this.lblTotalTakenCalory.TabIndex = 0;
@@ -546,16 +526,16 @@ namespace DiyetProgramiProje
             this.lblTakenCalorie.AutoSize = true;
             this.lblTakenCalorie.Location = new System.Drawing.Point(836, 75);
             this.lblTakenCalorie.Name = "lblTakenCalorie";
-            this.lblTakenCalorie.Size = new System.Drawing.Size(166, 23);
+            this.lblTakenCalorie.Size = new System.Drawing.Size(176, 23);
             this.lblTakenCalorie.TabIndex = 27;
-            this.lblTakenCalorie.Text = "Total Taken Calorie :";
+            this.lblTakenCalorie.Text = "Toplam Alınan Kalori:";
             // 
             // lblCalorieByMeal
             // 
             this.lblCalorieByMeal.AutoSize = true;
             this.lblCalorieByMeal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblCalorieByMeal.ForeColor = System.Drawing.Color.Red;
-            this.lblCalorieByMeal.Location = new System.Drawing.Point(980, 37);
+            this.lblCalorieByMeal.Location = new System.Drawing.Point(1070, 38);
             this.lblCalorieByMeal.Name = "lblCalorieByMeal";
             this.lblCalorieByMeal.Size = new System.Drawing.Size(20, 23);
             this.lblCalorieByMeal.TabIndex = 0;
@@ -568,7 +548,7 @@ namespace DiyetProgramiProje
             this.lblMealCalorie.Name = "lblMealCalorie";
             this.lblMealCalorie.Size = new System.Drawing.Size(120, 23);
             this.lblMealCalorie.TabIndex = 26;
-            this.lblMealCalorie.Text = "Meal Calorie :";
+            this.lblMealCalorie.Text = "Öğün Kalorisi:";
             // 
             // cboxLvMealTime
             // 
@@ -582,11 +562,11 @@ namespace DiyetProgramiProje
             // labelMealTime2
             // 
             this.labelMealTime2.AutoSize = true;
-            this.labelMealTime2.Location = new System.Drawing.Point(22, 115);
+            this.labelMealTime2.Location = new System.Drawing.Point(6, 115);
             this.labelMealTime2.Name = "labelMealTime2";
-            this.labelMealTime2.Size = new System.Drawing.Size(99, 23);
+            this.labelMealTime2.Size = new System.Drawing.Size(118, 23);
             this.labelMealTime2.TabIndex = 17;
-            this.labelMealTime2.Text = "Meal Time:";
+            this.labelMealTime2.Text = "Öğün Zamanı:";
             // 
             // dtMealDate
             // 
@@ -599,11 +579,11 @@ namespace DiyetProgramiProje
             // labelMealDate2
             // 
             this.labelMealDate2.AutoSize = true;
-            this.labelMealDate2.Location = new System.Drawing.Point(22, 59);
+            this.labelMealDate2.Location = new System.Drawing.Point(6, 59);
             this.labelMealDate2.Name = "labelMealDate2";
-            this.labelMealDate2.Size = new System.Drawing.Size(98, 23);
+            this.labelMealDate2.Size = new System.Drawing.Size(105, 23);
             this.labelMealDate2.TabIndex = 15;
-            this.labelMealDate2.Text = "Meal Date:";
+            this.labelMealDate2.Text = "Öğün Tarihi:";
             // 
             // lvMeals
             // 
@@ -625,28 +605,28 @@ namespace DiyetProgramiProje
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Food";
-            this.columnHeader2.Width = 174;
+            this.columnHeader2.Text = "Yemek";
+            this.columnHeader2.Width = 128;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Portion";
-            this.columnHeader3.Width = 78;
+            this.columnHeader3.Text = "Porsiyon";
+            this.columnHeader3.Width = 103;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Calorie";
+            this.columnHeader4.Text = "Kalori";
             this.columnHeader4.Width = 90;
             // 
             // radioButtonOpen
             // 
             this.radioButtonOpen.AutoSize = true;
             this.radioButtonOpen.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButtonOpen.Location = new System.Drawing.Point(240, 4);
+            this.radioButtonOpen.Location = new System.Drawing.Point(328, 4);
             this.radioButtonOpen.Name = "radioButtonOpen";
-            this.radioButtonOpen.Size = new System.Drawing.Size(107, 27);
+            this.radioButtonOpen.Size = new System.Drawing.Size(109, 27);
             this.radioButtonOpen.TabIndex = 26;
-            this.radioButtonOpen.Text = "Tips Open";
+            this.radioButtonOpen.Text = "İpucu Açık";
             this.radioButtonOpen.UseVisualStyleBackColor = true;
             this.radioButtonOpen.CheckedChanged += new System.EventHandler(this.radioButtonOpen_CheckedChanged);
             // 
@@ -655,12 +635,12 @@ namespace DiyetProgramiProje
             this.radioButtonClose.AutoSize = true;
             this.radioButtonClose.Checked = true;
             this.radioButtonClose.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButtonClose.Location = new System.Drawing.Point(345, 4);
+            this.radioButtonClose.Location = new System.Drawing.Point(441, 4);
             this.radioButtonClose.Name = "radioButtonClose";
-            this.radioButtonClose.Size = new System.Drawing.Size(117, 27);
+            this.radioButtonClose.Size = new System.Drawing.Size(123, 27);
             this.radioButtonClose.TabIndex = 27;
             this.radioButtonClose.TabStop = true;
-            this.radioButtonClose.Text = "Tips Closed";
+            this.radioButtonClose.Text = "İpucu Kapalı";
             this.radioButtonClose.UseVisualStyleBackColor = true;
             // 
             // labelTips
@@ -669,9 +649,9 @@ namespace DiyetProgramiProje
             this.labelTips.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelTips.Location = new System.Drawing.Point(22, 6);
             this.labelTips.Name = "labelTips";
-            this.labelTips.Size = new System.Drawing.Size(212, 23);
+            this.labelTips.Size = new System.Drawing.Size(300, 23);
             this.labelTips.TabIndex = 28;
-            this.labelTips.Text = "You can change tips here :";
+            this.labelTips.Text = "İpuçlarını buradan değiştirebilirsiniz:\r\n";
             // 
             // UserForm
             // 
@@ -739,7 +719,6 @@ namespace DiyetProgramiProje
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private FontAwesome.Sharp.IconButton btnAddMeal2;
-        private FontAwesome.Sharp.IconButton btnNewMeal2;
         private System.Windows.Forms.Label labelAddMeal1;
         private System.Windows.Forms.GroupBox groupBoxCheckMeal;
         private System.Windows.Forms.Label lblTotalTakenCalory;

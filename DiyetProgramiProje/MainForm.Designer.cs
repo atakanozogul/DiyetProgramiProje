@@ -83,7 +83,7 @@
             this.btnLogOut1.Name = "btnLogOut1";
             this.btnLogOut1.Size = new System.Drawing.Size(160, 50);
             this.btnLogOut1.TabIndex = 15;
-            this.btnLogOut1.Text = "LOG OUT";
+            this.btnLogOut1.Text = "HESAPTAN ÇIK";
             this.btnLogOut1.UseVisualStyleBackColor = true;
             this.btnLogOut1.Click += new System.EventHandler(this.btnLogOut1_Click);
             // 
@@ -99,7 +99,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(160, 50);
             this.btnExit.TabIndex = 14;
-            this.btnExit.Text = "EXIT";
+            this.btnExit.Text = "ÇIKIŞ";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -127,7 +127,7 @@
             this.btnUserNewFood.Name = "btnUserNewFood";
             this.btnUserNewFood.Size = new System.Drawing.Size(160, 50);
             this.btnUserNewFood.TabIndex = 18;
-            this.btnUserNewFood.Text = "ADD FOOD";
+            this.btnUserNewFood.Text = "YEMEK EKLEME";
             this.btnUserNewFood.UseVisualStyleBackColor = true;
             this.btnUserNewFood.Click += new System.EventHandler(this.btnUserNewFood_Click);
             // 
@@ -143,7 +143,7 @@
             this.btnUserReports.Name = "btnUserReports";
             this.btnUserReports.Size = new System.Drawing.Size(160, 50);
             this.btnUserReports.TabIndex = 17;
-            this.btnUserReports.Text = "REPORTS";
+            this.btnUserReports.Text = "RAPORLAR";
             this.btnUserReports.UseVisualStyleBackColor = true;
             this.btnUserReports.Click += new System.EventHandler(this.btnUserReports_Click);
             // 
@@ -159,7 +159,7 @@
             this.btnUserMessages.Name = "btnUserMessages";
             this.btnUserMessages.Size = new System.Drawing.Size(160, 50);
             this.btnUserMessages.TabIndex = 16;
-            this.btnUserMessages.Text = "MESSAGES";
+            this.btnUserMessages.Text = "MESAJLAR";
             this.btnUserMessages.UseVisualStyleBackColor = true;
             this.btnUserMessages.Click += new System.EventHandler(this.btnUserMessages_Click);
             // 
@@ -175,7 +175,7 @@
             this.btnUserMain.Name = "btnUserMain";
             this.btnUserMain.Size = new System.Drawing.Size(160, 50);
             this.btnUserMain.TabIndex = 14;
-            this.btnUserMain.Text = "HOME PAGE";
+            this.btnUserMain.Text = "ANA SAYFA";
             this.btnUserMain.UseVisualStyleBackColor = true;
             this.btnUserMain.Click += new System.EventHandler(this.btnUserMain_Click);
             // 
@@ -201,7 +201,7 @@
             this.btnAdminReports.Name = "btnAdminReports";
             this.btnAdminReports.Size = new System.Drawing.Size(160, 50);
             this.btnAdminReports.TabIndex = 14;
-            this.btnAdminReports.Text = "REPORTS";
+            this.btnAdminReports.Text = "RAPORLAR";
             this.btnAdminReports.UseVisualStyleBackColor = true;
             this.btnAdminReports.Click += new System.EventHandler(this.btnAdminReports_Click);
             // 
@@ -217,7 +217,7 @@
             this.btnAdminMain.Name = "btnAdminMain";
             this.btnAdminMain.Size = new System.Drawing.Size(160, 50);
             this.btnAdminMain.TabIndex = 13;
-            this.btnAdminMain.Text = "HOME PAGE";
+            this.btnAdminMain.Text = "ANA SAYFA";
             this.btnAdminMain.UseVisualStyleBackColor = true;
             this.btnAdminMain.Click += new System.EventHandler(this.btnAdminMain_Click);
             // 
@@ -245,7 +245,7 @@
             this.btnDieticianReports.Name = "btnDieticianReports";
             this.btnDieticianReports.Size = new System.Drawing.Size(160, 50);
             this.btnDieticianReports.TabIndex = 16;
-            this.btnDieticianReports.Text = "REPORTS";
+            this.btnDieticianReports.Text = "RAPORLAR";
             this.btnDieticianReports.UseVisualStyleBackColor = true;
             this.btnDieticianReports.Click += new System.EventHandler(this.btnDieticianReports_Click);
             // 
@@ -261,7 +261,7 @@
             this.btnDieticianMessages.Name = "btnDieticianMessages";
             this.btnDieticianMessages.Size = new System.Drawing.Size(160, 50);
             this.btnDieticianMessages.TabIndex = 15;
-            this.btnDieticianMessages.Text = "MESSAGES";
+            this.btnDieticianMessages.Text = "MESAJLAR";
             this.btnDieticianMessages.UseVisualStyleBackColor = true;
             this.btnDieticianMessages.Click += new System.EventHandler(this.btnDieticianMessages_Click);
             // 
@@ -277,7 +277,7 @@
             this.btnDieticianMain.Name = "btnDieticianMain";
             this.btnDieticianMain.Size = new System.Drawing.Size(160, 50);
             this.btnDieticianMain.TabIndex = 14;
-            this.btnDieticianMain.Text = "HOME PAGE";
+            this.btnDieticianMain.Text = "ANA SAYFA";
             this.btnDieticianMain.UseVisualStyleBackColor = true;
             this.btnDieticianMain.Click += new System.EventHandler(this.btnDieticianMain_Click);
             // 

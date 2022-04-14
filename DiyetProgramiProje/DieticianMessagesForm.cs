@@ -124,12 +124,12 @@ namespace DiyetProgramiProje
                     message.UserInformationId = userId;
                     message.DieticianId = dieticianRegisterInfo.Id;
                     messageService.Add(message);
-                    MessageBox.Show("Message has been send");
+                    MessageBox.Show("Mesaj gönderildi.");
                 }
 
                 else
                 {
-                    MessageBox.Show("Any client selected");
+                    MessageBox.Show("Hiçbir kullanıcı seçilmedi.");
                 }
             }
             catch (Exception ex)

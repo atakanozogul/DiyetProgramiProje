@@ -28,11 +28,11 @@ namespace DiyetProgramiProje
             userRegisterInfo = _user;
             categoryService = new CategoryService();
             foodService = new FoodService();
-            groupBox1.Text = "Add Category";
-            groupBox2.Text = "Add Category Menu";
-            btnAddCat.Text = "Add Category";
-            groupBoxAddFood.Text = "Add Food";
-            btnFoodAdd.Text = "Add Food";
+            groupBox1.Text = "Kategori Ekle";
+            groupBox2.Text = "Kategori Ekleme Menüsü";
+            btnAddCat.Text = "Kategori Ekle";
+            groupBoxAddFood.Text = "Yemek Ekle";
+            btnFoodAdd.Text = "Yemek Ekle";
         }
         public FoodAddForm(UserRegisterInfo _user, FoodName _foodForUpdate, FoodCategory _foodCategory)
         {
@@ -42,11 +42,11 @@ namespace DiyetProgramiProje
             foodService = new FoodService();
             foodForUpdate = _foodForUpdate;
             foodCategory = _foodCategory;
-            groupBox1.Text = "Update Category";
-            groupBox2.Text = "Update Category Menu";
-            groupBoxAddFood.Text = "Update Food";
-            btnFoodAdd.Text = "Update Food";
-            btnAddCat.Text = "Update Category";
+            groupBox1.Text = "Kategori Güncelle";
+            groupBox2.Text = "Kategori Güncelleme Menüsü";
+            groupBoxAddFood.Text = "Yemek Güncelle";
+            btnFoodAdd.Text = "Yemek Güncelle";
+            btnAddCat.Text = "Kategori Güncelle";
             FillForUpdate();
         }
 
@@ -111,10 +111,6 @@ namespace DiyetProgramiProje
             cboxCategoryName.DisplayMember = "CategoryName";
             cboxCategoryName.ValueMember = "Id";
             cboxCategoryName.DataSource = categoryService.GetActives();
-
-            //FoodCategory cat = categoryService.GetById(foodForUpdate.FoodCategoryId);
-
-            //cboxCategoryName.SelectedItem = cat.CategoryName;
         }
 
         private void txtFilterCategory_TextChanged(object sender, EventArgs e)
@@ -149,7 +145,7 @@ namespace DiyetProgramiProje
 
         private void btnAddCat_Click(object sender, EventArgs e)
         {
-            if (btnAddCat.Text == "Add Category")
+            if (btnAddCat.Text == "Kategori Ekle")
             {
                 if (txtCategoryName.Text != string.Empty)
                 {
@@ -157,11 +153,11 @@ namespace DiyetProgramiProje
                     foodCategory.CategoryName = txtCategoryName.Text;
                     categoryService.Add(foodCategory);
 
-                    MessageBox.Show("Category has been added.");
+                    MessageBox.Show("Kategori eklendi.");
                 }
                 else
                 {
-                    MessageBox.Show("Please type a category name");
+                    MessageBox.Show("Lütfen bir kategori adı girin.");
                 }
             }
             else
@@ -170,7 +166,7 @@ namespace DiyetProgramiProje
                 uptFoodCategory.CategoryName = txtCategoryName.Text;
                 categoryService.Update(uptFoodCategory);
 
-                MessageBox.Show("Category has been updated.");
+                MessageBox.Show("Kategori güncellendi.");
             }
         }
 
@@ -190,11 +186,11 @@ namespace DiyetProgramiProje
         {
             if (txtFoodName.Text == string.Empty || txtFoodCalories.Text == string.Empty)
             {
-                MessageBox.Show("Please fill all blanks");
+                MessageBox.Show("Lütfen bütün boşlukları doldurun.");
             }
             else
             {
-                if (btnFoodAdd.Text == "Add Food")
+                if (btnFoodAdd.Text == "Yemek Ekle")
                 {
                     FoodName foodName = new FoodName();
                     foodName.Name = txtFoodName.Text;
@@ -210,7 +206,7 @@ namespace DiyetProgramiProje
                     foodName.FoodPicture = arr;
                     foodService.Add(foodName);
 
-                    MessageBox.Show("Food has been added. ");
+                    MessageBox.Show("Yemek eklendi.");
 
                 }
 
@@ -235,7 +231,7 @@ namespace DiyetProgramiProje
                     }
                     foodService.Update(uptFoodName);
 
-                    MessageBox.Show("Food has been updated.");
+                    MessageBox.Show("Yemek güncellendi.");
 
                 }
 

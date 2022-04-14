@@ -86,18 +86,6 @@ namespace DiyetProgramiProje
             }
         }
 
-        private void ReportForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //Form frm = Application.OpenForms["AdminForm"];
-            //if (frm != null)
-            //    frm.Show();
-            //else
-            //{
-            //    Form frm1 = Application.OpenForms["UserForm"];
-            //    frm1.Show();
-            //}
-        }
-
         private void btnCategoriesShow_Click(object sender, EventArgs e)
         {
             dgvCategory.Rows.Clear();
