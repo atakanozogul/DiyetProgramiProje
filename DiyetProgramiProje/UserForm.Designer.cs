@@ -275,7 +275,7 @@ namespace DiyetProgramiProje
             this.groupBoxAddMeal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBoxAddMeal.Location = new System.Drawing.Point(16, 27);
             this.groupBoxAddMeal.Name = "groupBoxAddMeal";
-            this.groupBoxAddMeal.Size = new System.Drawing.Size(1158, 364);
+            this.groupBoxAddMeal.Size = new System.Drawing.Size(1158, 357);
             this.groupBoxAddMeal.TabIndex = 1;
             this.groupBoxAddMeal.TabStop = false;
             this.groupBoxAddMeal.Text = "Yemek Ekle";
@@ -284,7 +284,7 @@ namespace DiyetProgramiProje
             // pbox2
             // 
             this.pbox2.Image = ((System.Drawing.Image)(resources.GetObject("pbox2.Image")));
-            this.pbox2.Location = new System.Drawing.Point(749, 269);
+            this.pbox2.Location = new System.Drawing.Point(757, 269);
             this.pbox2.Name = "pbox2";
             this.pbox2.Size = new System.Drawing.Size(50, 45);
             this.pbox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -321,7 +321,7 @@ namespace DiyetProgramiProje
             // 
             // labelAddMeal2
             // 
-            this.labelAddMeal2.Location = new System.Drawing.Point(814, 269);
+            this.labelAddMeal2.Location = new System.Drawing.Point(823, 258);
             this.labelAddMeal2.Name = "labelAddMeal2";
             this.labelAddMeal2.Size = new System.Drawing.Size(175, 79);
             this.labelAddMeal2.TabIndex = 22;

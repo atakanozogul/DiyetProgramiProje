@@ -26,13 +26,10 @@ namespace Model.Entities
             }
         }
         public string Graduation { get; set; }
-        public StatusEnum Status { get; set; } = StatusEnum.Active;
+        public StatusEnum Status { get; set; } = StatusEnum.Aktif;
         public byte[] Picture { get; set; }
 
         public virtual ICollection<UserInformation> UserInformations { get; set; }
-
-
-        //public virtual int DieticianRegisterInfoId { get; set; }
         public virtual DieticianRegisterInfo DieticianRegisterInfo { get; set; }
         public virtual ICollection<DieticianMessage> DieticianMessages { get; set; }
     }

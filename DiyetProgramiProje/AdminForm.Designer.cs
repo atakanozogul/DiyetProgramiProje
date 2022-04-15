@@ -174,20 +174,20 @@
             this.activeToolStripMenuItem,
             this.passiveToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(115, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(100, 48);
             // 
             // activeToolStripMenuItem
             // 
             this.activeToolStripMenuItem.Name = "activeToolStripMenuItem";
-            this.activeToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
-            this.activeToolStripMenuItem.Text = "Actived";
+            this.activeToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.activeToolStripMenuItem.Text = "Aktif";
             this.activeToolStripMenuItem.Click += new System.EventHandler(this.activeToolStripMenuItem_Click);
             // 
             // passiveToolStripMenuItem
             // 
             this.passiveToolStripMenuItem.Name = "passiveToolStripMenuItem";
-            this.passiveToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
-            this.passiveToolStripMenuItem.Text = "Passive";
+            this.passiveToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.passiveToolStripMenuItem.Text = "Pasif";
             this.passiveToolStripMenuItem.Click += new System.EventHandler(this.passiveToolStripMenuItem_Click);
             // 
             // groupBoxCatFood
@@ -230,7 +230,7 @@
             this.btnUpdateCatAndFood.Name = "btnUpdateCatAndFood";
             this.btnUpdateCatAndFood.Size = new System.Drawing.Size(160, 57);
             this.btnUpdateCatAndFood.TabIndex = 41;
-            this.btnUpdateCatAndFood.Text = "Update Food And Category ";
+            this.btnUpdateCatAndFood.Text = "Yemek ve Kategori Güncelle";
             this.btnUpdateCatAndFood.UseVisualStyleBackColor = true;
             this.btnUpdateCatAndFood.Click += new System.EventHandler(this.btnUpdateCatAndFood_Click);
             // 
@@ -350,7 +350,7 @@
             this.btnAddCatAndFood.Name = "btnAddCatAndFood";
             this.btnAddCatAndFood.Size = new System.Drawing.Size(160, 60);
             this.btnAddCatAndFood.TabIndex = 27;
-            this.btnAddCatAndFood.Text = "Add Food And Category ";
+            this.btnAddCatAndFood.Text = "Yemek ve Kategori Ekle";
             this.btnAddCatAndFood.UseVisualStyleBackColor = true;
             this.btnAddCatAndFood.Click += new System.EventHandler(this.btnAddCatAndFood_Click);
             // 
@@ -385,7 +385,7 @@
             // 
             // columnHeader15
             // 
-            this.columnHeader15.Text = "FoodID";
+            this.columnHeader15.Text = "ID";
             this.columnHeader15.Width = 88;
             // 
             // columnHeader16
@@ -409,20 +409,20 @@
             this.activeToolStripMenuItem2,
             this.passiveToolStripMenuItem2});
             this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(113, 48);
+            this.contextMenuStrip3.Size = new System.Drawing.Size(100, 48);
             // 
             // activeToolStripMenuItem2
             // 
             this.activeToolStripMenuItem2.Name = "activeToolStripMenuItem2";
-            this.activeToolStripMenuItem2.Size = new System.Drawing.Size(112, 22);
-            this.activeToolStripMenuItem2.Text = "Active";
+            this.activeToolStripMenuItem2.Size = new System.Drawing.Size(99, 22);
+            this.activeToolStripMenuItem2.Text = "Aktif";
             this.activeToolStripMenuItem2.Click += new System.EventHandler(this.activeToolStripMenuItem2_Click);
             // 
             // passiveToolStripMenuItem2
             // 
             this.passiveToolStripMenuItem2.Name = "passiveToolStripMenuItem2";
-            this.passiveToolStripMenuItem2.Size = new System.Drawing.Size(112, 22);
-            this.passiveToolStripMenuItem2.Text = "Passive";
+            this.passiveToolStripMenuItem2.Size = new System.Drawing.Size(99, 22);
+            this.passiveToolStripMenuItem2.Text = "Pasif";
             this.passiveToolStripMenuItem2.Click += new System.EventHandler(this.passiveToolStripMenuItem2_Click);
             // 
             // lvCategory
@@ -444,7 +444,7 @@
             // 
             // columnHeader13
             // 
-            this.columnHeader13.Text = "CategoryID";
+            this.columnHeader13.Text = "ID";
             this.columnHeader13.Width = 117;
             // 
             // columnHeader14
@@ -458,20 +458,20 @@
             this.activeToolStripMenuItem1,
             this.passiveToolStripMenuItem1});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(113, 48);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(181, 70);
             // 
             // activeToolStripMenuItem1
             // 
             this.activeToolStripMenuItem1.Name = "activeToolStripMenuItem1";
-            this.activeToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
-            this.activeToolStripMenuItem1.Text = "Active";
+            this.activeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.activeToolStripMenuItem1.Text = "Aktif";
             this.activeToolStripMenuItem1.Click += new System.EventHandler(this.activeToolStripMenuItem1_Click);
             // 
             // passiveToolStripMenuItem1
             // 
             this.passiveToolStripMenuItem1.Name = "passiveToolStripMenuItem1";
-            this.passiveToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
-            this.passiveToolStripMenuItem1.Text = "Passive";
+            this.passiveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.passiveToolStripMenuItem1.Text = "Pasif";
             this.passiveToolStripMenuItem1.Click += new System.EventHandler(this.passiveToolStripMenuItem1_Click);
             // 
             // labelFilter

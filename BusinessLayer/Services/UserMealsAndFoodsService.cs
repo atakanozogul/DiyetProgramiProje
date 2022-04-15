@@ -19,9 +19,9 @@ namespace BusinessLayer.Services
         }
         public bool Add(UserMealsAndFoods meal)
         {
-            if (String.IsNullOrWhiteSpace(meal.Calorie.ToString()) || String.IsNullOrWhiteSpace(meal.FoodNameID.ToString()) || String.IsNullOrWhiteSpace(meal.Portion.ToString()) || String.IsNullOrWhiteSpace(meal.UserMealID.ToString()))
+            if (string.IsNullOrWhiteSpace(meal.Calorie.ToString()) || string.IsNullOrWhiteSpace(meal.FoodNameID.ToString()) || string.IsNullOrWhiteSpace(meal.Portion.ToString()) || string.IsNullOrWhiteSpace(meal.UserMealID.ToString()))
             {
-                throw new Exception("Please fill all blanks");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {
@@ -33,7 +33,7 @@ namespace BusinessLayer.Services
         {
             if (mealId==0 || foodId==0)
             {
-                throw new Exception("Please select a food before delete");
+                throw new Exception("Lütfen silme işleminden önce bir yemek seçin.");
             }
             else
             {
@@ -44,9 +44,9 @@ namespace BusinessLayer.Services
 
         public decimal GetCalorieByMeal(int userId, DateTime mealDate, MealTimesEnum mealTime)
         {
-            if (userId < 1 || String.IsNullOrWhiteSpace(mealDate.ToString()) || String.IsNullOrWhiteSpace(mealTime.ToString()))
+            if (userId < 1 || string.IsNullOrWhiteSpace(mealDate.ToString()) || string.IsNullOrWhiteSpace(mealTime.ToString()))
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Hatalı giriş");
             }
             else
             {
@@ -56,9 +56,9 @@ namespace BusinessLayer.Services
 
         public decimal GetTotalCalorieById(int userId, DateTime mealDate)
         {
-            if (userId < 1 || String.IsNullOrWhiteSpace(mealDate.ToString()))
+            if (userId < 1 || string.IsNullOrWhiteSpace(mealDate.ToString()))
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Htalı giriş");
             }
             else
             {
@@ -68,9 +68,9 @@ namespace BusinessLayer.Services
 
         public bool UpdateMealAndFood(UserMealsAndFoods _meal)
         {
-            if (String.IsNullOrWhiteSpace(_meal.Portion.ToString()))
+            if (string.IsNullOrWhiteSpace(_meal.Portion.ToString()))
             {
-                throw new Exception("Please fill all blanks");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {

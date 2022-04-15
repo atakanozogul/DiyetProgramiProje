@@ -8,7 +8,7 @@ namespace Model.Enums
 {
     public enum GenderEnum
     {
-        Male = 1,
-        Female
+        Erkek = 1,
+        Kadın
     }
 }

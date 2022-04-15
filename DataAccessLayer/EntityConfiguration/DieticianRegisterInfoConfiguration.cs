@@ -13,11 +13,9 @@ namespace DataAccessLayer.EntityConfiguration
     {
         public DieticianRegisterInfoConfiguration()
         {
-            //Property(dr => dr.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(dr => dr.Email).IsRequired().HasMaxLength(100);
             Property(dr => dr.Password).IsRequired();
             Property(dr => dr.UserType).IsRequired();
-
             HasIndex(dr => dr.Email).IsUnique();
         }
     }

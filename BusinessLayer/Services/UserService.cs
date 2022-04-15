@@ -26,7 +26,7 @@ namespace BusinessLayer.Services
 
         public UserRegisterInfo CheckLogin(string email, string password)
         {
-            if (String.IsNullOrWhiteSpace(email) || String.IsNullOrWhiteSpace(password) || userRepository.CheckUserStatus(email) == StatusEnum.Passive.ToString())
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || userRepository.CheckUserStatus(email) == StatusEnum.Pasif.ToString())
             {
                 return null;
             }
@@ -45,7 +45,7 @@ namespace BusinessLayer.Services
         {
             if (id < 1)
             {
-                throw new Exception("Invalid User");
+                throw new Exception("Hatalı Kullanıcı");
             }
             else
             {
@@ -68,11 +68,11 @@ namespace BusinessLayer.Services
         {
             if (string.IsNullOrWhiteSpace(userInfo.FirstName) || string.IsNullOrWhiteSpace(userInfo.LastName) || string.IsNullOrWhiteSpace(userInfo.BirthDate.ToString()) || string.IsNullOrWhiteSpace(userInfo.Gender.ToString()) || string.IsNullOrWhiteSpace(userInfo.Height.ToString()) || string.IsNullOrWhiteSpace(userInfo.Weight.ToString()) || string.IsNullOrWhiteSpace(userInfo.DailyExercise.ToString()) || string.IsNullOrWhiteSpace(userInfo.UserRequest.ToString()) || string.IsNullOrWhiteSpace(userInfo.DieticianId.ToString()) || string.IsNullOrWhiteSpace(userInfo.DailyCalorie.ToString()) || string.IsNullOrWhiteSpace(userInfo.RequireCalorie.ToString()))
             {
-                throw new Exception("Please fill all blanks.");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else if (userInfo.BirthDate.Date.AddYears(13) > DateTime.Now.Date)
             {
-                throw new Exception("You have to at least 13 years old for sign up.");
+                throw new Exception("Kayıt olmak için en az 13 yaşında olmalısınız.");
             }
             else
             {
@@ -83,9 +83,9 @@ namespace BusinessLayer.Services
 
         public bool AddRegister(UserRegisterInfo userRegister)
         {
-            if (String.IsNullOrWhiteSpace(userRegister.Email) || String.IsNullOrWhiteSpace(userRegister.Password))
+            if (string.IsNullOrWhiteSpace(userRegister.Email) || string.IsNullOrWhiteSpace(userRegister.Password))
             {
-                throw new Exception("Please fill all blanks.");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {

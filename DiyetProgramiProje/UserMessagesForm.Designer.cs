@@ -82,17 +82,17 @@ namespace DiyetProgramiProje
             // labelMessage2
             // 
             this.labelMessage2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelMessage2.Location = new System.Drawing.Point(339, 419);
+            this.labelMessage2.Location = new System.Drawing.Point(310, 419);
             this.labelMessage2.Name = "labelMessage2";
-            this.labelMessage2.Size = new System.Drawing.Size(136, 57);
+            this.labelMessage2.Size = new System.Drawing.Size(172, 57);
             this.labelMessage2.TabIndex = 40;
-            this.labelMessage2.Text = "Mesajlarınız burada görünür";
+            this.labelMessage2.Text = "Mesaj içeriği burada görünür";
             // 
             // labelMessage1
             // 
             this.labelMessage1.Location = new System.Drawing.Point(57, 419);
             this.labelMessage1.Name = "labelMessage1";
-            this.labelMessage1.Size = new System.Drawing.Size(137, 56);
+            this.labelMessage1.Size = new System.Drawing.Size(151, 57);
             this.labelMessage1.TabIndex = 39;
             this.labelMessage1.Text = "Mesajlarınız burada listelenir";
             // 

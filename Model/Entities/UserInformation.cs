@@ -33,7 +33,7 @@ namespace Model.Entities
         public ExerciseEnum DailyExercise { get; set; }
         public decimal DailyCalorie { get; set; }
         public decimal RequireCalorie { get; set; }
-        public StatusEnum Status { get; set; } = StatusEnum.Active;
+        public StatusEnum Status { get; set; } = StatusEnum.Aktif;
 
         public virtual UserRegisterInfo UserRegisterInfo { get; set; }
 

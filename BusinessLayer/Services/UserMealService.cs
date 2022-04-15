@@ -21,7 +21,7 @@ namespace BusinessLayer.Services
         {
             if (String.IsNullOrWhiteSpace(meal.MealDate.ToString()) || String.IsNullOrWhiteSpace(meal.MealTime.ToString()))
             {
-                throw new Exception("Please fill all blanks.");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {
@@ -33,7 +33,7 @@ namespace BusinessLayer.Services
         {
             if (String.IsNullOrWhiteSpace(_meal.MealDate.ToString()) || String.IsNullOrWhiteSpace(_meal.MealTime.ToString()))
             {
-                throw new Exception("Please fill all blanks.");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {

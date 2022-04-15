@@ -26,7 +26,7 @@ namespace BusinessLayer.Services
         {
             if(string.IsNullOrWhiteSpace(dietician.FirstName) || string.IsNullOrWhiteSpace(dietician.LastName) || string.IsNullOrWhiteSpace(dietician.Graduation))
             {
-                throw new Exception("Please fill all blanks");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {
@@ -38,15 +38,15 @@ namespace BusinessLayer.Services
         {
             if (string.IsNullOrWhiteSpace(dietician.Email) || string.IsNullOrWhiteSpace(dietician.Password))
             {
-                throw new Exception("Please fill all blanks");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else if (!dietician.Email.Contains("@") || !dietician.Email.Contains(".com"))
             {
-                throw new Exception("Please type a correct email.");
+                throw new Exception("Lütfen '@'ve '.com'içeren doğru bir e - mail girin.");
             }
             else if (dietician.Password.Length<6 || dietician.Password.Length>25 || !dietician.Password.Any(c=> char.IsUpper(c)) || !dietician.Password.Any(c => char.IsDigit(c)) || !dietician.Password.Any(c => char.IsPunctuation(c)))
             {
-                throw new Exception("Password length must be at least 6 and at most 25 digits and must contain at least one number, capital letter and symbol.");
+                throw new Exception("Şifre uzunluğu en az 6 en fazla 25 haneli olmalı ve en az bir rakam, büyük harf ve sembol içermelidir.");
             }
             else
             {
@@ -56,7 +56,7 @@ namespace BusinessLayer.Services
 
         public DieticianRegisterInfo CheckLogin(string email, string password)
         {
-            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || dieticianRepository.CheckStatus(email) == StatusEnum.Passive.ToString())
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || dieticianRepository.CheckStatus(email) == StatusEnum.Pasif.ToString())
             {
                 return null;
             }
@@ -75,7 +75,7 @@ namespace BusinessLayer.Services
         {
             if (id<1)
             {
-                throw new Exception("Invalid Input");
+                throw new Exception("Hatalı giriş.");
             }
             else
             {

@@ -33,10 +33,10 @@
 
             Dietician dietician1 = new Dietician()
             {
-                FirstName = "diyetisyen1",
-                LastName = "diyetisyen1",
-                Graduation = "A university",
-                Status = StatusEnum.Active,
+                FirstName = "Mehmet",
+                LastName = "Savaş",
+                Graduation = "Boğaziçi Üniversitesi",
+                Status = StatusEnum.Aktif,
                 Picture = arr1
             };
 
@@ -47,7 +47,7 @@
             DieticianRegisterInfo dieticianRegisterInfo1 = new DieticianRegisterInfo()
             {
                 Id = dietician1.Id,
-                Email = "dietician1@diet.com",
+                Email = "mehmetsavas@diet.com",
                 Password = "12345D!",
                 UserType = MembershipTypeEnum.Dietician
             };
@@ -66,10 +66,10 @@
 
             Dietician dietician2 = new Dietician()
             {
-                FirstName = "diyetisyen2",
-                LastName = "diyetisyen2",
-                Graduation = "B university",
-                Status = StatusEnum.Active,
+                FirstName = "Ali",
+                LastName = "Toprak",
+                Graduation = "Marmara Üniversitesi",
+                Status = StatusEnum.Aktif,
                 Picture = arrD
             };
 
@@ -80,7 +80,7 @@
             DieticianRegisterInfo dieticianRegisterInfo2 = new DieticianRegisterInfo()
             {
                 Id = dietician2.Id,
-                Email = "dietician2@diet.com",
+                Email = "alitoprak@diet.com",
                 Password = "12345D!",
                 UserType = MembershipTypeEnum.Dietician
             };
@@ -94,12 +94,12 @@
                 FirstName = "admin",
                 LastName = "admin",
                 BirthDate = DateTime.Parse("01-01-1970"),
-                Gender = GenderEnum.Male,
+                Gender = GenderEnum.Erkek,
                 Height = 1,
                 Weight = 1,
-                Status = StatusEnum.Active,
-                UserRequest = UserRequestsEnum.MaintainWeight,
-                DailyExercise = ExerciseEnum.LightlyActive,
+                Status = StatusEnum.Aktif,
+                UserRequest = UserRequestsEnum.KiloyuKorumak,
+                DailyExercise = ExerciseEnum.Hafif,
                 DailyCalorie = 2000,
                 RequireCalorie = 1,
                 DieticianId = 1
@@ -119,15 +119,15 @@
 
             UserInformation user1Info = new UserInformation()
             {
-                FirstName = "kullanıcı1",
-                LastName = "kullanıcı1",
+                FirstName = "Ahmet",
+                LastName = "Yılmaz",
                 BirthDate = DateTime.Parse("01-01-1999"),
-                Gender = GenderEnum.Male,
+                Gender = GenderEnum.Erkek,
                 Height = 178,
                 Weight = 72,
-                Status = StatusEnum.Active,
-                UserRequest = UserRequestsEnum.MaintainWeight,
-                DailyExercise = ExerciseEnum.LightlyActive,
+                Status = StatusEnum.Aktif,
+                UserRequest = UserRequestsEnum.KiloyuKorumak,
+                DailyExercise = ExerciseEnum.Hafif,
                 DailyCalorie = 2000,
                 RequireCalorie = 2200,
                 DieticianId = 1
@@ -137,7 +137,7 @@
 
             UserRegisterInfo user1 = new UserRegisterInfo();
             user1.Id = user1Info.Id;
-            user1.Email = "user1@gmail.com";
+            user1.Email = "ahmetyilmaz@gmail.com";
             user1.Password = "12345B!";
             user1.UserType = MembershipTypeEnum.Client;
 
@@ -146,15 +146,15 @@
 
             UserInformation user2Info = new UserInformation()
             {
-                FirstName = "kullanıcı2",
-                LastName = "kullanıcı2",
+                FirstName = "Ayşe",
+                LastName = "Demir",
                 BirthDate = DateTime.Parse("01-01-2001"),
-                Gender = GenderEnum.Female,
+                Gender = GenderEnum.Kadın,
                 Height = 165,
                 Weight = 53,
-                Status = StatusEnum.Active,
-                UserRequest = UserRequestsEnum.MaintainWeight,
-                DailyExercise = ExerciseEnum.LightlyActive,
+                Status = StatusEnum.Aktif,
+                UserRequest = UserRequestsEnum.KiloyuKorumak,
+                DailyExercise = ExerciseEnum.Hafif,
                 DailyCalorie = 2000,
                 RequireCalorie = 2200,
                 DieticianId = 2
@@ -164,7 +164,7 @@
 
             UserRegisterInfo user2 = new UserRegisterInfo();
             user2.Id = user2Info.Id;
-            user2.Email = "user2@gmail.com";
+            user2.Email = "ayşedemir@gmail.com";
             user2.Password = "12345A!";
             user2.UserType = MembershipTypeEnum.Client;
 
@@ -175,7 +175,7 @@
             FoodCategory category1 = new FoodCategory()
             {
                 CategoryName = "Et",
-                Status = StatusEnum.Active
+                Status = StatusEnum.Aktif
             };
 
             context.FoodCategories.Add(category1);
@@ -185,7 +185,7 @@
             FoodCategory category2 = new FoodCategory()
             {
                 CategoryName = "Sebzeler",
-                Status = StatusEnum.Active
+                Status = StatusEnum.Aktif
             };
 
             context.FoodCategories.Add(category2);
@@ -194,7 +194,7 @@
             FoodCategory category3 = new FoodCategory()
             {
                 CategoryName = "Meyveler",
-                Status = StatusEnum.Active
+                Status = StatusEnum.Aktif
             };
 
             context.FoodCategories.Add(category3);
@@ -203,7 +203,7 @@
             FoodCategory category4 = new FoodCategory()
             {
                 CategoryName = "Süt Ürünleri",
-                Status = StatusEnum.Active
+                Status = StatusEnum.Aktif
             };
 
             context.FoodCategories.Add(category4);
@@ -212,7 +212,7 @@
             FoodCategory category5 = new FoodCategory()
             {
                 CategoryName = "Yağ ve Şekerler",
-                Status = StatusEnum.Active
+                Status = StatusEnum.Aktif
             };
 
             context.FoodCategories.Add(category5);
@@ -231,7 +231,7 @@
             {
                 Name = "Biftek",
                 Calorie = 300,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr2,
                 FoodCategoryId = 1
             };
@@ -252,7 +252,7 @@
             {
                 Name = "Tavuk",
                 Calorie = 220,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr3,
                 FoodCategoryId = 1
             };
@@ -273,7 +273,7 @@
             {
                 Name = "Fasulye",
                 Calorie = 50,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr4,
                 FoodCategoryId = 2
             };
@@ -294,7 +294,7 @@
             {
                 Name = "Brokoli",
                 Calorie = 32,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr5,
                 FoodCategoryId = 2
             };
@@ -315,7 +315,7 @@
             {
                 Name = "Marul",
                 Calorie = 15,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr6,
                 FoodCategoryId = 2
             };
@@ -336,7 +336,7 @@
             {
                 Name = "Jambon",
                 Calorie = 240,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr7,
                 FoodCategoryId = 1
             };
@@ -357,7 +357,7 @@
             {
                 Name = "Havuç",
                 Calorie = 25,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr8,
                 FoodCategoryId = 2
             };
@@ -378,7 +378,7 @@
             {
                 Name = "Peynir",
                 Calorie = 110,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr9,
                 FoodCategoryId = 4
             };
@@ -399,7 +399,7 @@
             {
                 Name = "Süt",
                 Calorie = 125,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr10,
                 FoodCategoryId = 4
             };
@@ -420,7 +420,7 @@
             {
                 Name = "Yoğurt",
                 Calorie = 90,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr11,
                 FoodCategoryId = 4
             };
@@ -441,7 +441,7 @@
             {
                 Name = "Çikolota",
                 Calorie = 200,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr12,
                 FoodCategoryId = 5
             };
@@ -462,7 +462,7 @@
             {
                 Name = "Reçel",
                 Calorie = 38,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr13,
                 FoodCategoryId = 5
             };
@@ -483,7 +483,7 @@
             {
                 Name = "Üzüm",
                 Calorie = 55,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr14,
                 FoodCategoryId = 3
             };
@@ -504,7 +504,7 @@
             {
                 Name = "Zeytin",
                 Calorie = 50,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr15,
                 FoodCategoryId = 3
             };
@@ -525,7 +525,7 @@
             {
                 Name = "Domates",
                 Calorie = 30,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr16,
                 FoodCategoryId = 3
             };
@@ -546,7 +546,7 @@
             {
                 Name = "Ispanak",
                 Calorie = 8,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr17,
                 FoodCategoryId = 2
             };
@@ -567,7 +567,7 @@
             {
                 Name = "Lahana",
                 Calorie = 15,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr18,
                 FoodCategoryId = 2
             };
@@ -588,7 +588,7 @@
             {
                 Name = "Karnabahar",
                 Calorie = 20,
-                Status = StatusEnum.Active,
+                Status = StatusEnum.Aktif,
                 FoodPicture = arr18,
                 FoodCategoryId = 2
             };

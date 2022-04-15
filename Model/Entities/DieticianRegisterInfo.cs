@@ -14,8 +14,6 @@ namespace Model.Entities
         public string Email { get; set; }
         public string Password { get; set; }
         public MembershipTypeEnum UserType { get; set; }
-
-        //public virtual int DieticianId { get; set; }
         public virtual Dietician Dietician { get; set; }
     }
 }

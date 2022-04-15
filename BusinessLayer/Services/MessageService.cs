@@ -20,7 +20,7 @@ namespace BusinessLayer.Services
         {
             if (string.IsNullOrWhiteSpace(message.MessageHeader) || string.IsNullOrWhiteSpace(message.Text))
             {
-                throw new Exception("Please fill all blanks");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {
@@ -32,7 +32,7 @@ namespace BusinessLayer.Services
         {
             if (messageId < 1)
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Hatalı giriş");
             }
             else
             {
@@ -49,7 +49,7 @@ namespace BusinessLayer.Services
         {
             if (userId < 1)
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Hatalı giriş");
             }
             else
             {

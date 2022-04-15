@@ -32,7 +32,7 @@ namespace DataAccessLayer.Repositories
 
         public UserRegisterInfo CheckLogin(string email, string password)
         {
-            UserRegisterInfo user = db.UserRegisterInfos.Where(u => u.Email == email && u.Password == password && u.UserInformation.Status == StatusEnum.Active).SingleOrDefault();
+            UserRegisterInfo user = db.UserRegisterInfos.Where(u => u.Email == email && u.Password == password && u.UserInformation.Status == StatusEnum.Aktif).SingleOrDefault();
 
             return user;
         }
@@ -55,11 +55,11 @@ namespace DataAccessLayer.Repositories
 
         public List<UserInformation> GetAllPassives()
         {
-            return db.UserInformations.Where(u => u.Status == StatusEnum.Passive).ToList();
+            return db.UserInformations.Where(u => u.Status == StatusEnum.Pasif).ToList();
         }
         public List<UserInformation> GetAllActives()
         {
-            return db.UserInformations.Where(u => u.Status == StatusEnum.Active && u.Id != 1).ToList();
+            return db.UserInformations.Where(u => u.Status == StatusEnum.Aktif && u.Id != 1).ToList();
         }
 
         public List<UserInformation> GetAllClients()
@@ -87,14 +87,14 @@ namespace DataAccessLayer.Repositories
         public bool Active(UserInformation entity)
         {
             UserInformation passiveUser = db.UserInformations.Find(entity.Id);
-            passiveUser.Status = StatusEnum.Active;
+            passiveUser.Status = StatusEnum.Aktif;
             return db.SaveChanges() > 0;
         }
 
         public bool Passive(UserInformation entity)
         {
             UserInformation userInf = db.UserInformations.Find(entity.Id);
-            userInf.Status = StatusEnum.Passive;
+            userInf.Status = StatusEnum.Pasif;
 
             return db.SaveChanges() > 0;
         }

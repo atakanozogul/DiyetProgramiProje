@@ -8,10 +8,10 @@ namespace Model.Enums
 {
     public enum ExerciseEnum
     {
-        Sedentary = 1,
-        LightlyActive,
-        ModeratelyActive,
-        Active,
-        VeryActive
+        Sedanter = 1,
+        Hafif,
+        Orta,
+        Aktif,
+        ÇokAktif
     }
 }

@@ -242,7 +242,7 @@ namespace DiyetProgramiProje
             GetForm1();
         }
 
-        private void GetForm1()
+        public void GetForm1()
         {
             Form frm = Application.OpenForms["Form1"];
             if (frm == null)

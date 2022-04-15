@@ -14,8 +14,6 @@ namespace Model.Entities
         public string Email { get; set; }
         public string Password { get; set; }
         public MembershipTypeEnum UserType { get; set; }
-
-        //public virtual int UserInformationId { get; set; }
         public virtual UserInformation UserInformation { get; set; }
     }
 }

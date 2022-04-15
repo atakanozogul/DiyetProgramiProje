@@ -17,7 +17,7 @@ namespace Model.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public decimal Calorie { get; set; }
-        public StatusEnum Status { get; set; } = StatusEnum.Passive;
+        public StatusEnum Status { get; set; } = StatusEnum.Pasif;
         public byte[] FoodPicture { get; set; }
 
         public virtual int FoodCategoryId { get; set; }

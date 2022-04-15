@@ -14,7 +14,7 @@ namespace Model.Entities
         public int DieticianId { get; set; }
         public string MessageHeader { get; set; }
         public string Text { get; set; }
-        public StatusEnum Status { get; set; } = StatusEnum.Active;
+        public StatusEnum Status { get; set; } = StatusEnum.Aktif;
         public DateTime MessageDate { get; set; } = DateTime.Now;
 
         public virtual int UserInformationId { get; set; }

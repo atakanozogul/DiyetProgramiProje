@@ -25,16 +25,12 @@ namespace BusinessLayer.Services
         {
             if (String.IsNullOrWhiteSpace(food.Name))
             {
-                throw new Exception("Please type a food name !");
+                throw new Exception("Lütfen yemek adı girin.");
             }
             else if (String.IsNullOrWhiteSpace(food.Calorie.ToString()))
             {
-                throw new Exception("Please type a calorie !");
+                throw new Exception("Lütfen kalori girin.");
             }
-            //else if (String.IsNullOrWhiteSpace(food.FoodCategory.CategoryName))
-            //{
-            //    throw new Exception("Please type a categorie name !");
-            //}
             else
             {
                 return foodRepository.Add(food);
@@ -66,7 +62,7 @@ namespace BusinessLayer.Services
         {
             if (id < 1)
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Hatalı giriş");
             }
             else
             {
@@ -78,7 +74,7 @@ namespace BusinessLayer.Services
         {
             if (foodId < 1)
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Hatalı giriş");
             }
             else
             {
@@ -90,7 +86,7 @@ namespace BusinessLayer.Services
         {
             if (foodId < 1)
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Hatalı giriş");
             }
             else
             {
@@ -102,7 +98,7 @@ namespace BusinessLayer.Services
         {
             if (foodId < 1 || portion < 0.25)
             {
-                throw new Exception("Invalid input");
+                throw new Exception("Hatalı giriş");
             }
             else
             {
@@ -119,7 +115,7 @@ namespace BusinessLayer.Services
         {
             if (String.IsNullOrWhiteSpace(food.Name) || String.IsNullOrWhiteSpace(food.Calorie.ToString()))
             {
-                throw new Exception("Please fill all blanks");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {

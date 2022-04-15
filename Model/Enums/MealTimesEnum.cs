@@ -8,10 +8,10 @@ namespace Model.Enums
 {
     public enum MealTimesEnum
     {
-        Breakfast = 1,
-        SnackOne,
-        Lunch,
-        SnackTwo,
-        Dinner
+        Kahvaltı = 1,
+        AraOgun1,
+        ÖğlenYemeği,
+        AraOgun2,
+        AkşamYemeği
     }
 }

@@ -16,7 +16,6 @@ namespace DataAccessLayer.EntityConfiguration
             Property(u => u.Email).IsRequired().HasMaxLength(50);
             Property(u => u.Password).IsRequired().HasMaxLength(20);
             Property(u => u.UserType).IsRequired();
-
             HasIndex(u => u.Email).IsUnique();
         }
     }

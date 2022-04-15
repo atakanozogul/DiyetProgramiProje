@@ -42,18 +42,25 @@ namespace DiyetProgramiProje
 
         public void FillListBoxMessages()
         {
-            List<DieticianMessage> dieticianMessages = dieticianMessageService.GetByUserIdAndDieticianId((int)cboxUsers.SelectedValue, dieticianRegisterInfo.Id);
+            if (cboxUsers.SelectedValue!=null)
+            {
+                List<DieticianMessage> dieticianMessages = dieticianMessageService.GetByUserIdAndDieticianId((int)cboxUsers.SelectedValue, dieticianRegisterInfo.Id);
+
+                lboxMessages.DisplayMember = "MessageHeader";
+                lboxMessages.ValueMember = "Id";
+                lboxMessages.DataSource = dieticianMessages;
+            }
             
-            lboxMessages.DisplayMember = "MessageHeader";
-            lboxMessages.ValueMember = "Id";
-            lboxMessages.DataSource = dieticianMessages;
         }
         private void DieticianMessagesForm_Load(object sender, EventArgs e)
         {
             FillUserCombobox();
             FillListBoxMessages();
             FillClient();
-            cboxUsers.SelectedIndex=0;
+            if (cboxUsers.SelectedValue != null)
+            {
+                cboxUsers.SelectedIndex = 0;
+            }
             labelMessage1.Visible = false;
             labelMessage2.Visible = false;
             labelMessage3.Visible = false;

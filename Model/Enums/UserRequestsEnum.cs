@@ -8,8 +8,8 @@ namespace Model.Enums
 {
     public enum UserRequestsEnum
     {
-        GainWeight = 1,
-        LoseWeight,
-        MaintainWeight
+        KiloAlmak = 1,
+        KiloVermek,
+        KiloyuKorumak
     }
 }

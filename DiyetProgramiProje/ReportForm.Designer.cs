@@ -100,11 +100,11 @@
             // 
             // labelReport2
             // 
-            this.labelReport2.Location = new System.Drawing.Point(530, 235);
+            this.labelReport2.Location = new System.Drawing.Point(514, 217);
             this.labelReport2.Name = "labelReport2";
             this.labelReport2.Size = new System.Drawing.Size(140, 95);
             this.labelReport2.TabIndex = 40;
-            this.labelReport2.Text = "Yemeklerinizin kategorisini buradan görebilirsiniz.";
+            this.labelReport2.Text = "Kategori raporunu buradan görebilirsiniz.";
             // 
             // labelReport1
             // 
@@ -117,7 +117,7 @@
             // pBox2
             // 
             this.pBox2.Image = ((System.Drawing.Image)(resources.GetObject("pBox2.Image")));
-            this.pBox2.Location = new System.Drawing.Point(566, 187);
+            this.pBox2.Location = new System.Drawing.Point(566, 153);
             this.pBox2.Name = "pBox2";
             this.pBox2.Size = new System.Drawing.Size(50, 45);
             this.pBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -270,16 +270,16 @@
             // 
             // labelReport3
             // 
-            this.labelReport3.Location = new System.Drawing.Point(19, 142);
+            this.labelReport3.Location = new System.Drawing.Point(19, 128);
             this.labelReport3.Name = "labelReport3";
-            this.labelReport3.Size = new System.Drawing.Size(143, 102);
+            this.labelReport3.Size = new System.Drawing.Size(150, 141);
             this.labelReport3.TabIndex = 35;
-            this.labelReport3.Text = "Yemek saatinizi seçerek ne yediğinizi görebilirsiniz.";
+            this.labelReport3.Text = "Öğün zamanına göre yenilen yiyecek raporunu buradan görebilirsiniz.";
             // 
             // pBox3
             // 
             this.pBox3.Image = ((System.Drawing.Image)(resources.GetObject("pBox3.Image")));
-            this.pBox3.Location = new System.Drawing.Point(168, 167);
+            this.pBox3.Location = new System.Drawing.Point(180, 167);
             this.pBox3.Name = "pBox3";
             this.pBox3.Size = new System.Drawing.Size(50, 45);
             this.pBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -332,16 +332,16 @@
             // 
             // labelReport4
             // 
-            this.labelReport4.Location = new System.Drawing.Point(398, 115);
+            this.labelReport4.Location = new System.Drawing.Point(382, 160);
             this.labelReport4.Name = "labelReport4";
-            this.labelReport4.Size = new System.Drawing.Size(104, 129);
+            this.labelReport4.Size = new System.Drawing.Size(129, 154);
             this.labelReport4.TabIndex = 39;
-            this.labelReport4.Text = "En çok yenen yiyecekleri burada görebilirsiniz";
+            this.labelReport4.Text = "En çok yenen yiyecekler raporunu buradan görebilirsiniz";
             // 
             // pBox4
             // 
             this.pBox4.Image = ((System.Drawing.Image)(resources.GetObject("pBox4.Image")));
-            this.pBox4.Location = new System.Drawing.Point(402, 65);
+            this.pBox4.Location = new System.Drawing.Point(408, 92);
             this.pBox4.Name = "pBox4";
             this.pBox4.Size = new System.Drawing.Size(50, 45);
             this.pBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

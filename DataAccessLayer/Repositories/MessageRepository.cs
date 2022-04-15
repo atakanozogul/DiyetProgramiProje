@@ -29,7 +29,7 @@ namespace DataAccessLayer.Repositories
         public bool Delete(int messageId)
         {
             Message message = db.Messages.Find(messageId);
-            message.Status = StatusEnum.Passive;
+            message.Status = StatusEnum.Pasif;
 
             return db.SaveChanges() > 0;
         }

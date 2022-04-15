@@ -8,7 +8,7 @@ namespace Model.Enums
 {
     public enum StatusEnum
     {
-        Active = 1,
-        Passive
+        Aktif = 1,
+        Pasif
     }
 }

@@ -16,7 +16,7 @@ namespace Model.Entities
         }
         public int Id { get; set; }
         public string CategoryName { get; set; }
-        public StatusEnum Status { get; set; } = StatusEnum.Passive;
+        public StatusEnum Status { get; set; } = StatusEnum.Pasif;
 
         public virtual ICollection<FoodName> FoodNames { get; set; }
     }

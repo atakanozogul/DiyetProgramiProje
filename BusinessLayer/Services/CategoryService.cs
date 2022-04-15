@@ -25,7 +25,7 @@ namespace BusinessLayer.Services
         {
             if (String.IsNullOrWhiteSpace(category.CategoryName))
             {
-                throw new Exception("Please type a category name");
+                throw new Exception("Lütfen kategori adı girin.");
             }
             else
             {
@@ -52,7 +52,7 @@ namespace BusinessLayer.Services
         {
             if (id < 1)
             {
-                throw new Exception("Invalid Category");
+                throw new Exception("Hatalı kategori.");
             }
             else
             {
@@ -71,7 +71,7 @@ namespace BusinessLayer.Services
         {
             if (String.IsNullOrWhiteSpace(category.CategoryName))
             {
-                throw new Exception("Please fill all blanks");
+                throw new Exception("Lütfen bütün boşlukları doldurun.");
             }
             else
             {

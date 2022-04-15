@@ -26,8 +26,6 @@ namespace DiyetProgramiProje
 
         private void Form1_Load(object sender, EventArgs e)
         {            
-            txtEmail.Text = "user1@gmail.com";
-            txtPassword.Text = "12345B!";
             panel2.Visible = false;
             panel3.Visible = true;
             this.BackColor = ColorTranslator.FromHtml("#cad2c5");

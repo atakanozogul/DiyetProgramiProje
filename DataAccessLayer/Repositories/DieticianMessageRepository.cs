@@ -28,7 +28,7 @@ namespace DataAccessLayer.Repositories
         public bool Delete(int messageId)
         {
             DieticianMessage message = db.DieticianMessages.Find(messageId);
-            message.Status = StatusEnum.Passive;
+            message.Status = StatusEnum.Pasif;
 
             return db.SaveChanges() > 0;
         }

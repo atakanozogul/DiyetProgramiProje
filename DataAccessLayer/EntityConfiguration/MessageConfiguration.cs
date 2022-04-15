@@ -17,7 +17,6 @@ namespace DataAccessLayer.EntityConfiguration
             Property(m => m.Text).IsRequired();
             Property(m => m.MessageDate).IsRequired();
             Property(m => m.DieticianId).IsRequired();
-
             HasRequired(m => m.UserInformation).WithMany(m => m.Messages).HasForeignKey(m => m.UserInformationId);
         }
     }

@@ -167,30 +167,30 @@ namespace DiyetProgramiProje
             
             switch (gender)
             {
-                case GenderEnum.Male:
+                case GenderEnum.Erkek:
                     bmr = (decimal)(66.47 + (13.75 * Convert.ToDouble(weight)) + (5.003 * Convert.ToDouble(height) - (6.755 * age)));
                     break;
 
-                case GenderEnum.Female:
+                case GenderEnum.Kadın:
                     bmr = (decimal)(655.1 + (9.563 * Convert.ToDouble(weight)) + (1.850 * Convert.ToDouble(height) - (4.676 * age)));
                     break;
             }
 
             switch (exercise)
             {
-                case ExerciseEnum.Sedentary:
+                case ExerciseEnum.Sedanter:
                     amr = bmr * Convert.ToDecimal(1.2);
                     break;
-                case ExerciseEnum.LightlyActive:
+                case ExerciseEnum.Hafif:
                     amr = bmr * Convert.ToDecimal(1.375);
                     break;
-                case ExerciseEnum.ModeratelyActive:
+                case ExerciseEnum.Orta:
                     amr = bmr * Convert.ToDecimal(1.55);
                     break;
-                case ExerciseEnum.Active:
+                case ExerciseEnum.Aktif:
                     amr = bmr * Convert.ToDecimal(1.725);
                     break;
-                case ExerciseEnum.VeryActive:
+                case ExerciseEnum.ÇokAktif:
                     amr = bmr * Convert.ToDecimal(1.9);
                     break;
             }
@@ -202,13 +202,13 @@ namespace DiyetProgramiProje
             decimal requireCalorie = 0;
             switch (userRequests)
             {
-                case UserRequestsEnum.GainWeight:
+                case UserRequestsEnum.KiloAlmak:
                     requireCalorie = dailyCalorie * Convert.ToDecimal(1.1);
                     break;
-                case UserRequestsEnum.LoseWeight:
+                case UserRequestsEnum.KiloVermek:
                     requireCalorie = dailyCalorie * Convert.ToDecimal(0.9);
                     break;
-                case UserRequestsEnum.MaintainWeight:
+                case UserRequestsEnum.KiloyuKorumak:
                     requireCalorie = dailyCalorie * 1;
                     break;
             }
@@ -232,8 +232,8 @@ namespace DiyetProgramiProje
                     UserInformation userInformation = new UserInformation();
                     userInformation.FirstName = txtFirstName.Text;
                     userInformation.LastName = txtLastName.Text;
-                    userInformation.BirthDate = dtBirthDate.Value;
-                    userInformation.Gender = rbMale.Checked ? GenderEnum.Male : GenderEnum.Female;
+                    userInformation.BirthDate = dtBirthDate.Value.Date;
+                    userInformation.Gender = rbMale.Checked ? GenderEnum.Erkek : GenderEnum.Kadın;
                     userInformation.Height = nudHeight.Value;
                     userInformation.Weight = nudWeight.Value;
                     userInformation.DailyExercise = (ExerciseEnum)Enum.Parse(typeof(ExerciseEnum), cboxDailyExercise.SelectedItem.ToString());
@@ -254,6 +254,7 @@ namespace DiyetProgramiProje
                     if (result == DialogResult.OK)
                     {
                         this.Close();
+                        
                     }
                 }
                 catch (Exception ex)
@@ -434,5 +435,6 @@ namespace DiyetProgramiProje
             GroupBox box = sender as GroupBox;
             DrawGroupBox(box, e.Graphics, ColorTranslator.FromHtml("#293241"), ColorTranslator.FromHtml("#293241"));
         }
+
     }
 }

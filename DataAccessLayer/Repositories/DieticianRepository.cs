@@ -34,7 +34,7 @@ namespace DataAccessLayer.Repositories
 
         public DieticianRegisterInfo CheckLogin(string email, string password)
         {
-            DieticianRegisterInfo dietician = db.DieticianRegisterInfos.Where(d => d.Email == email && d.Password == password && d.Dietician.Status == StatusEnum.Active).SingleOrDefault();
+            DieticianRegisterInfo dietician = db.DieticianRegisterInfos.Where(d => d.Email == email && d.Password == password && d.Dietician.Status == StatusEnum.Aktif).SingleOrDefault();
                 
                 return dietician;
         }
@@ -42,7 +42,7 @@ namespace DataAccessLayer.Repositories
         public bool Active(Dietician entity)
         {
             Dietician dietician = db.Dieticians.Find(entity.Id);
-            dietician.Status = StatusEnum.Active;
+            dietician.Status = StatusEnum.Aktif;
 
             return db.SaveChanges() > 0;
         }
@@ -50,7 +50,7 @@ namespace DataAccessLayer.Repositories
         public bool Passive(Dietician entity)
         {
             Dietician dietician = db.Dieticians.Find(entity.Id);
-            dietician.Status = StatusEnum.Passive;
+            dietician.Status = StatusEnum.Pasif;
 
             return db.SaveChanges() > 0;
         }
@@ -74,7 +74,7 @@ namespace DataAccessLayer.Repositories
         public List<Dietician> GetActiveAll()
         {
 
-            List<Dietician> dieticians = db.Dieticians.Where(d => d.Status == StatusEnum.Active).ToList();
+            List<Dietician> dieticians = db.Dieticians.Where(d => d.Status == StatusEnum.Aktif).ToList();
             return dieticians;
         
         }

@@ -65,7 +65,7 @@ namespace DiyetProgramiProje
         {
             UserInformation user = userService.GetById(Convert.ToInt32(lvUserInf.FocusedItem.Text));
 
-            if (user.Status == StatusEnum.Passive)
+            if (user.Status == StatusEnum.Pasif)
             {
                 userService.Active(user);
                 MessageBox.Show("Kullanıcı statüsü aktif olarak değiştirildi.");
@@ -82,7 +82,7 @@ namespace DiyetProgramiProje
         {
             UserInformation user = userService.GetById(Convert.ToInt32(lvUserInf.FocusedItem.Text));
 
-            if (user.Status == StatusEnum.Active)
+            if (user.Status == StatusEnum.Aktif)
             {
                 userService.Passive(user);
                 MessageBox.Show("Kullanıcı statüsü pasif olarak değiştirildi.");
@@ -486,7 +486,7 @@ namespace DiyetProgramiProje
             {
                 FoodCategory category = categoryService.GetById(Convert.ToInt32(lvCategory.FocusedItem.Text));
 
-                if (category.Status == StatusEnum.Passive)
+                if (category.Status == StatusEnum.Pasif)
                 {
                     categoryService.Active(category);
                     MessageBox.Show("Kategori statüsü aktif olarak değiştirildi.");
@@ -508,7 +508,7 @@ namespace DiyetProgramiProje
             {
                 FoodCategory category = categoryService.GetById(Convert.ToInt32(lvCategory.FocusedItem.Text));
 
-                if (category.Status == StatusEnum.Active)
+                if (category.Status == StatusEnum.Aktif)
                 {
                     categoryService.Passive(category);
                     MessageBox.Show("Kategori statüsü pasif olarak değiştirildi.");
@@ -530,7 +530,7 @@ namespace DiyetProgramiProje
             {
                 FoodName food = foodService.GetById(Convert.ToInt32(lvFood.FocusedItem.Text));
 
-                if (food.Status == StatusEnum.Passive)
+                if (food.Status == StatusEnum.Pasif)
                 {
                     foodService.Active(food);
                     MessageBox.Show("Kategori statüsü aktif olarak değiştirildi.");
@@ -552,7 +552,7 @@ namespace DiyetProgramiProje
             {
                 FoodName food = foodService.GetById(Convert.ToInt32(lvFood.FocusedItem.Text));
 
-                if (food.Status == StatusEnum.Active)
+                if (food.Status == StatusEnum.Aktif)
                 {
                     foodService.Passive(food);
                     MessageBox.Show("Yemek statüsü pasif olarak değiştirildi.");
